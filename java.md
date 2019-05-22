@@ -370,6 +370,37 @@ Difference between Awt(Applet) & Swings
 		<th> <strong> AWT </strong> </th>
 		<th> <strong> Swings </strong> </th>
 	</tr>
+	<tr>
+		<td> AWT(Abstract Window Toolkit) is a portable GUI library for stand-alone 
+		applications and/or applets.</td>
+		<td> Swings is a set of GUI components that build on AWT technology and provide 
+		a pluggable(can be changed at runtime) look and feel.</td>	
+	</tr>
+	<tr>
+		<td> It is a heavy-weight library.</td>
+		<td> It is a light-weight library.</td>
+	</tr>
+	<tr>
+		<td> They are not written in complete Java.</td>
+		<td> They are written in 100% Java.</td>
+	</tr>
+	<tr>
+		<td> AWT Components are platform-independent becuase they aren't written 
+		completely in Java.</td>
+		<td> Swing Component are platform-independent as they use Pure Java.</td>
+	</tr>
+	<tr>
+		<td> Import using "java.awt.*" library.</td>
+		<td> Import using "javax.swing.*" library.</td>
+	</tr>
+	<tr>
+		<td>Has many rich GUI features</td>
+		<td>All the features of GUI+Additional newer features</td>
+	</tr>
+	<tr>
+		<td>No Pluggable Look & Feel</td>
+		<td>Pluggable Look & Feel</td>
+	</tr>
 </table>
 
 ______________________________________________________________________________________
