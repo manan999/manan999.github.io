@@ -338,6 +338,40 @@ Sabki explanation khud likh diyo code main de rha
 	st.close() ;
 	conn.close() ;
 ```
+
+______________________________________________________________________________________
+
+JAVA buzzwords(Features of JAVA)
+-------------------------------
+<ol type="i">
+	<li> Simple</li>
+	<li> Secure</li>
+	<li> Portable</li>
+	<li> Object-Oriented</li>
+	<li> Robust</li>
+	<li> Multithreaded</li>
+	<li> Platform-Independent</li>
+	<li> Interpreted</li>
+	<li> High-Performance</li>
+	<li> Dynamic</li>
+</ol>
+
+______________________________________________________________________________________
+
+Thread Synchronization
+----------------------
+[Ye page Khol](https://www.studytonight.com/java/synchronization.php)
+
+______________________________________________________________________________________
+Difference between Awt(Applet) & Swings
+---------------------------------------
+<table>
+	<tr>
+		<th> <strong> AWT </strong> </th>
+		<th> <strong> Swings </strong> </th>
+	</tr>
+</table>
+
 ______________________________________________________________________________________
 
 jo bhi add karna hai yaha kar diyo
