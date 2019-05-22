@@ -1,4 +1,4 @@
-Inetaddress class - it is a class which is used to access the ip Address as well as name
+**Inetaddress class** - it is a class which is used to access the ip Address as well as name
 for the host or another computer. It stores both the address and name of the computer it 
 knows about.
 
