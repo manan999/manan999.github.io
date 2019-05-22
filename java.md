@@ -9,11 +9,13 @@ Factory method yani hum "new" likh ke object nahi bana payenge we have to use th
 Factory methods
 ---------------
 **getLocalHost()** -> To get the IP address of current computer
+
 **getByName()** -> To get IP address of another computer(jiska naam paas karenge)
 
 Other Methods
 --------------
 **getHostAddress()** -> Jo computer stored hai uska address return karo
+
 **getHostName()** -> Jo computer stored hai uska name return karo
 
 ```java
@@ -56,12 +58,19 @@ Thread Methods
 --------------
 
 getPriority() -> Returns priority number
+
 setPriority(Number) -> Sets Priority
+
 getName() 	-> Gets Thread Name as String
+
 setName(String)  -> Sets Thread Name
+
 isAlive()  -> Returns if thread is destroyed(ended) or not...returns true/false
+
 isDeamon() -> Returns true if thread is DeamonThread
+
 start() -> execute run() method
+
 sleep(number) -> sleep for these many milliseconds
 
 ______________________________________________________________________________________
