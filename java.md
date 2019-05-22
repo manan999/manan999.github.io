@@ -36,40 +36,33 @@ ________________________________________________________________________________
 
 Checked Exception
 -----------------
-FileNotFoundException
-IOException
-SQLException
-ClassNotFoundException
-InvocationTargetException
+FileNotFoundException <br>
+IOException <br>
+SQLException <br>
+ClassNotFoundException <br>
+InvocationTargetException <br>
 
 Unchecked Exception
--------------------
-ArithmeticException
-ArrayOutOfBoundsException
-NullPointerException
-NumberFormatException
-IllegalArguementException
+------------------- 
+ArithmeticException <br>
+ArrayOutOfBoundsException <br>
+NullPointerException <br>
+NumberFormatException <br>
+IllegalArguementException <br>
 
 ________________________________________________________________________________________
 
 Thread Methods
 --------------
 
-getPriority() -> Returns priority number
-
-setPriority(Number) -> Sets Priority
-
-getName() 	-> Gets Thread Name as String
-
-setName(String)  -> Sets Thread Name
-
-isAlive()  -> Returns if thread is destroyed(ended) or not...returns true/false
-
-isDeamon() -> Returns true if thread is DeamonThread
-
-start() -> execute run() method
-
-sleep(number) -> sleep for these many milliseconds
+getPriority() -> Returns priority number <br>
+setPriority(Number) -> Sets Priority <br>
+getName() 	-> Gets Thread Name as String  <br>
+setName(String)  -> Sets Thread Name <br>
+isAlive()  -> Returns if thread is destroyed(ended) or not...returns true/false <br>
+isDeamon() -> Returns true if thread is DeamonThread <br>
+start() -> execute run() method <br>
+sleep(number) -> sleep for these many milliseconds <br>
 
 ______________________________________________________________________________________
 
