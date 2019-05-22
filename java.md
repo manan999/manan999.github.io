@@ -202,16 +202,25 @@ Client-Server Communication using Socket and ServerSocket
 [Ye page Khol](https://www.javatpoint.com/socket-programming)
 
 _____________________________________________________________________________________
-<h2>Difference between applets and servlets</h2>
-<br/>
-<a href = "https://www.geeksforgeeks.org/difference-between-applets-and-servlets/"> click here </a>
-<hr/>
-Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
 
-_____________________________________________________________________________________________________________________
-string aur string buffer me difference.....aur jdbc wala bhi bhej diyo theory....kuki program toh mil jayega file m 
------------------------------------
-what is jdbc? discuss the general JDBC architecture. what are basic steps to create a jdbc application?
------------------------------------
-what are different types of jdbc statement?
------------------------------------
+		|	String		|	StringBuffer	|
+		|-----------------------------------|-------------------------------------|
+		| 1. String is an immutable object  | 1. StringBuffer is a mutable object |
+		|   (once created cannot be changed)|    we can change its balue again 	  |
+		|-----------------------------------|-------------------------------------|
+		| 2. String once assigned cannot be | 2. StringBufffer string can change  |
+		|   changed as it is stored in the  |  its value because it is stored in  | 
+		|   **Constant String Pool**		|  heap								  |
+		|-----------------------------------|-------------------------------------|
+		| 3. It is faster in access         | 3. It is slower in access			  |
+		---------------------------------------------------------------------------
+
+		> They have one similarity that they are both Thread safe(They cannot be used
+		  by 2 threads at the same time)
+
+		> However, they are different from StringBuilder which is also mutable but it 
+		 is not thread safe, it can be accessed by many threads at once and it is the 
+		 fastest in access 
+_____________________________________________________________________________________
+
+jo bhi add karna hai yaha kar diyo
