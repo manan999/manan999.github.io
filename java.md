@@ -209,4 +209,9 @@ ________________________________________________________________________________
 Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
 
 _____________________________________________________________________________________________________________________
-string aur string buffer me difference.....aur jdbc wala bhi bhej diyo theory....kuki program toh mil jayega file me
+string aur string buffer me difference.....aur jdbc wala bhi bhej diyo theory....kuki program toh mil jayega file m 
+-----------------------------------
+what is jdbc? discuss the general JDBC architecture. what are basic steps to create a jdbc application?
+-----------------------------------
+what are different types of jdbc statement?
+-----------------------------------
