@@ -195,3 +195,12 @@ Difference between JDBC and ODBC
 [Ye page Khol](https://techdifferences.com/difference-between-jdbc-and-odbc.html)
 
 _____________________________________________________________________________________
+
+Client-Server Communication using Socket and ServerSocket
+-------------------------------------
+
+[Ye page Khol](https://www.javatpoint.com/socket-programming)
+
+_____________________________________________________________________________________
+
+Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
