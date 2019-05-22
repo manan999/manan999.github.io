@@ -222,7 +222,54 @@ ________________________________________________________________________________
 
 JDBC
 ------
+Java Database Connectivity (JDBC) is an API specifying interfaces for accessing relational
+ databases. JDBC helps to connect to a database, send queries and updates to the database
+ and retrieve and process the results obtained from the database for queries.
 
+JDBC Architecture
+-----------------
+The JDBC architecture supports two-tier and three-tier processing models for accessing a
+database.
+
+<dl>
+	<dt> 2 -tier architecture </dt>
+	<dd>In the two-tier model, a Java applet or application communicates directly to the
+	 data source. The JDBC driver enables communication between the application and the
+	 data source. When a user sends a query to the data source, the answers for those 
+	 queries are sent back to the user in the form of results.
+	 The data source may not always be a single machine located at a single place. It can
+	  be located on a different machine on a network to which a user is connected. </dd>
+	 <dt> 3-tier architecture </dt>
+	 <dd> In the three-tier model, the user’s commands or queries are sent to middle-tier services, from which the commands are again sent to the data source. The results are sent back to the middle tier, and from there to the user. Application deployment also becomes easy and provides performance benefits. The middle tier is usually written in C or C++. </dd>
+</dl>
+
+JDBC DriverManager
+------------------
+The JDBC driver manager is a traditional backbone of the JDBC architecture, which specifies objects for connecting Java applications to a JDBC driver. 
+
+The DriverManager class acts as an interface between user and drivers. It keeps track of the drivers that are available and handles establishing a connection between a database and the appropriate driver.
+
+**Methods** <br>
+getConnection( String ) -> Connects to database whose URL is provided as String
+getConnection( String, String, String) -> Connects to database with (URL, username, password)
+registerDriver(String) -> load the driver with given path
+deregisterDriver( String) -> unload the given driver
+getDrivers() -> returns a list of all connected drivers
+
+______________________________________________________________________________________
+JDBC types of statement
+-----------------------
+There are 3 types of Statements, as given below:
+<dl>
+<dt>Statement:</dt>
+<dd>It can be used for general-purpose access to the database. It is useful when you are using
+ static SQL statements at runtime. </dd>
+<dt>PreparedStatement:</dt>
+<dd>It can be used when you plan to use the same SQL statement many times. The PreparedStatement
+ interface accepts input parameters at runtime.</dd> 
+<dt>CallableStatement:</dt>
+<dd>CallableStatement can be used when you want to access database stored procedures.</dd>
+</dl>
 
 ______________________________________________________________________________________
 
