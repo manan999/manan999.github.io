@@ -250,11 +250,12 @@ The JDBC driver manager is a traditional backbone of the JDBC architecture, whic
 The DriverManager class acts as an interface between user and drivers. It keeps track of the drivers that are available and handles establishing a connection between a database and the appropriate driver.
 
 **Methods** <br>
-getConnection( String ) -> Connects to database whose URL is provided as String
+getConnection( String ) -> Connects to database whose URL is provided as String <br>
 getConnection( String, String, String) -> Connects to database with (URL, username, password)
-registerDriver(String) -> load the driver with given path
-deregisterDriver( String) -> unload the given driver
-getDrivers() -> returns a list of all connected drivers
+<br>
+registerDriver(String) -> load the driver with given path <br>
+deregisterDriver( String) -> unload the given driver <br>
+getDrivers() -> returns a list of all connected drivers <br>
 
 ______________________________________________________________________________________
 JDBC types of statement
@@ -271,6 +272,72 @@ There are 3 types of Statements, as given below:
 <dd>CallableStatement can be used when you want to access database stored procedures.</dd>
 </dl>
 
+______________________________________________________________________________________
+
+Steps in JDBC
+-------------
+The steps involved in making a JDBC application consist of the following:
+
+<ul>
+	<li>Import JDBC packages.</li>
+	<li>Load and register the JDBC driver.</li>
+	<li>Open a connection to the database.</li>
+	<li>Create a statement object to perform a query.</li>
+	<li>Execute the statement object and return a query resultset.</li>
+	<li>Process the resultset.</li>
+	<li>Close the resultset and statement objects.</li>
+	<li>Close the connection.</li>
+</ul>
+
+Sabki explanation khud likh diyo code main de rha
+
+**Import JDBC packages**
+```java
+	import java.sql.* ;
+```
+**Load and Regitser Driver**
+```java
+	//main ke bahar
+	final static String driver= "com.mysql.jdbc.Driver" ;
+
+	//main ke andar
+	Class.forName(driver)
+```
+**Connect to Database**
+```java
+	//main ke bahar
+	final static String URL="jdbc:mysql://localhost/database" ;
+	final static String user = "Lalit" ;
+	final static String pass = "123456789"
+	//main ke andar
+	 Connection conn = null ;
+	 conn = DriverManager.getConnection(URL, user, pass) ;
+```
+**Create a statement object**
+```java
+	Statement st = null ;
+	st = conn.createStatement() ;
+```
+**Execute Statement and return ResultSet**
+```java
+	String str = "SELECT * FROM user" ;
+	ResultSet rs = st.executeQuery(str) ;
+```
+**ResultSet pe kaam**
+```java
+	while(rs.next())
+	{
+		//Jo bhi kaam karna hai
+		int xyz = rs.getInt("columnName") ;		//Aise get karo
+		String str - rs.getString("dusraColumn") ;		//Similarly
+	}
+```
+**Close ResultSet, Statement and Connection**
+```java
+	rs.close() ;
+	st.close() ;
+	conn.close() ;
+```
 ______________________________________________________________________________________
 
 jo bhi add karna hai yaha kar diyo
