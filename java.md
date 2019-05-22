@@ -204,3 +204,6 @@ Client-Server Communication using Socket and ServerSocket
 _____________________________________________________________________________________
 
 Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
+
+_____________________________________________________________________________________________________________________
+string aur string buffer me difference.....aur jdbc wala bhi bhej diyo theory....kuki program toh mil jayega file me
