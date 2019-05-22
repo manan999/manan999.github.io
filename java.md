@@ -363,6 +363,13 @@ Thread Synchronization
 [Ye page Khol](https://www.studytonight.com/java/synchronization.php)
 
 ______________________________________________________________________________________
+
+Byte Stream Class And Character Stream Class
+-------------------------------------
+
+[Ye page Khol](http://net-informations.com/java/cjava/stream.htm)
+
+______________________________________________________________________________________
 Difference between Awt(Applet) & Swings
 ---------------------------------------
 <table>
