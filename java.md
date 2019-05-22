@@ -207,13 +207,10 @@ ________________________________________________________________________________
 |-----------------------------------|-------------------------------------|
 | 1. String is an immutable object  | 1. StringBuffer is a mutable object |
 |   (once created cannot be changed)|    we can change its balue again 	  |
-|-----------------------------------|-------------------------------------|
 | 2. String once assigned cannot be | 2. StringBufffer string can change  |
 |   changed as it is stored in the  |  its value because it is stored in  | 
 |   **Constant String Pool**        |  heap								  |
-|-----------------------------------|-------------------------------------|
 | 3. It is faster in access         | 3. It is slower in access			  |
----------------------------------------------------------------------------
 
  > They have one similarity that they are both Thread safe(They cannot be used
   by 2 threads at the same time)
