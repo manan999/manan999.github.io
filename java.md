@@ -204,6 +204,7 @@ Client-Server Communication using Socket and ServerSocket
 _____________________________________________________________________________________
 <h2>Difference between applets and servlets</h2>
 ------------------------------------------------
+<br/>
 <a href = "https://www.geeksforgeeks.org/difference-between-applets-and-servlets/"> click here </a>
 <hr/>
 Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
