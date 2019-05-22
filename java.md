@@ -8,14 +8,12 @@ Factory method yani hum "new" likh ke object nahi bana payenge we have to use th
 
 Factory methods
 ---------------
-**getLocalHost()** -> To get the IP address of current computer
-
+**getLocalHost()** -> To get the IP address of current computer <br>
 **getByName()** -> To get IP address of another computer(jiska naam paas karenge)
 
 Other Methods
 --------------
-**getHostAddress()** -> Jo computer stored hai uska address return karo
-
+**getHostAddress()** -> Jo computer stored hai uska address return karo <br>
 **getHostName()** -> Jo computer stored hai uska name return karo
 
 ```java
