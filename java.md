@@ -1,4 +1,4 @@
-Inetaddress class - it is a class which is used to access the ip Address as well as name
+**Inetaddress class** - it is a class which is used to access the ip Address as well as name
 for the host or another computer. It stores both the address and name of the computer it 
 knows about.
 
@@ -8,13 +8,13 @@ Factory method yani hum "new" likh ke object nahi bana payenge we have to use th
 
 Factory methods
 ---------------
-**getLocalHost()** -> To get the IP address of current computer
-**getByName()** -> To get IP address of another computer(jiska naam paas karenge)
+**getLocalHost()** -> To get the IP address of current computer <br>
+**getByName()** -> To get IP address of another computer(jiska naam paas karenge) <br>
 
 Other Methods
 --------------
-**getHostAddress()** -> Jo computer stored hai uska address return karo
-**getHostName()** -> Jo computer stored hai uska name return karo
+**getHostAddress()** -> Jo computer stored hai uska address return karo <br>
+**getHostName()** -> Jo computer stored hai uska name return karo <br>
 
 ```java
 	import java.net.*; 
@@ -36,33 +36,33 @@ ________________________________________________________________________________
 
 Checked Exception
 -----------------
-FileNotFoundException
-IOException
-SQLException
-ClassNotFoundException
-InvocationTargetException
+FileNotFoundException <br>
+IOException <br>
+SQLException <br>
+ClassNotFoundException <br>
+InvocationTargetException <br>
 
 Unchecked Exception
 -------------------
-ArithmeticException
-ArrayOutOfBoundsException
-NullPointerException
-NumberFormatException
-IllegalArguementException
+ArithmeticException <br>
+ArrayOutOfBoundsException <br>
+NullPointerException <br>
+NumberFormatException <br>
+IllegalArguementException <br>
 
 ________________________________________________________________________________________
 
 Thread Methods
 --------------
 
-getPriority() -> Returns priority number
-setPriority(Number) -> Sets Priority
-getName() 	-> Gets Thread Name as String
-setName(String)  -> Sets Thread Name
-isAlive()  -> Returns if thread is destroyed(ended) or not...returns true/false
-isDeamon() -> Returns true if thread is DeamonThread
-start() -> execute run() method
-sleep(number) -> sleep for these many milliseconds
+getPriority() -> Returns priority number <br>
+setPriority(Number) -> Sets Priority <br>
+getName() 	-> Gets Thread Name as String <br>
+setName(String)  -> Sets Thread Name <br>
+isAlive()  -> Returns if thread is destroyed(ended) or not...returns true/false <br>
+isDeamon() -> Returns true if thread is DeamonThread <br>
+start() -> execute run() method <br>
+sleep(number) -> sleep for these many milliseconds <br>
 
 ______________________________________________________________________________________
 
@@ -181,10 +181,17 @@ class Address
 		InetAddress add = InetAddress.getByName(str) ;
 
 		//Ab InetAddress ki object me vo website ki details aa gayi
-		System.out.println(add.getHostName()) ;		//website ka nem
+		System.out.println(add.getHostName()) ;		//website ka name
 		System.out.println(add.getHostAddress()) ;	// website ka IP Address
 	}
 }
 ``` 
 
 _________________________________________________________________________________
+
+Difference between JDBC and ODBC
+-------------------------------------
+
+[Ye page Khol](https://techdifferences.com/difference-between-jdbc-and-odbc.html)
+
+_____________________________________________________________________________________
