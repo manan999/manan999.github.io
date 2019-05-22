@@ -202,9 +202,10 @@ Client-Server Communication using Socket and ServerSocket
 [Ye page Khol](https://www.javatpoint.com/socket-programming)
 
 _____________________________________________________________________________________
-Difference between applets and servlets
+<h2>Difference between applets and servlets</h2>
+------------------------------------------------
 <a href = "https://www.geeksforgeeks.org/difference-between-applets-and-servlets/"> click here </a>
-
+<hr/>
 Filhal main ja rha hu jo bhi add karna hai yaha kar diyo
 
 _____________________________________________________________________________________________________________________
