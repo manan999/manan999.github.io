@@ -28,3 +28,21 @@ deaths of many humans. For example -
 		Microsoft still advises its users to take backup for crucial data before installing 
 		patches.</li> <br>
 </ol>
+
+____
+
+What is Software Engineering
+----------------------------
+
+It is a science whose aim is the production of quality software that is delivered on time, within
+budget and that satisfies its requirements.<br>
+Software has become an important part of all human industries, but their are some serious problems
+regarding the cost, timeliness, maintainence ad quality of software products. <br>
+<b><u>Software Engineering</u></b> aims to solve all these problems by producing a quality, 
+maintainable software on time and within budget.
+
+____
+
+Software Process
+---------------
+
