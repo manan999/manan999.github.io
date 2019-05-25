@@ -104,14 +104,14 @@ Types of Software
 -----------------
 Isme har ek ka matter khud hi likh lena, badi baat nahi hai
 <ol>
-	<li> System Software (e.g- Windows, Android) </li> <br>
-	<li> Real-Time Software (e.g- Weather Forecasting, Temperature Monitor) </li> <br>
-	<li> Embedded Software (e.g- Security System, Signal System) </li> <br>
-	<li> Business Software (e.g- MS Office, Accounts) </li> <br>
-	<li> Personal Software (e.g- Games, Media Player) </li> <br>
-	<li> Artificial Intelligence (e.g- Cortana, Alexa) </li> <br>
-	<li> Web Based Software (e.g- web apps) </li> <br>
-	<li> Engineeing & Scientific (e.g- To perform scientific calculations) </li> <br>
+	<li> System Software (e.g- Windows, Android) </li>
+	<li> Real-Time Software (e.g- Weather Forecasting, Temperature Monitor) </li>
+	<li> Embedded Software (e.g- Security System, Signal System) </li>
+	<li> Business Software (e.g- MS Office, Accounts) </li>
+	<li> Personal Software (e.g- Games, Media Player) </li>
+	<li> Artificial Intelligence (e.g- Cortana, Alexa) </li>
+	<li> Web Based Software (e.g- web apps) </li>
+	<li> Engineeing & Scientific (e.g- To perform scientific calculations) </li>
 </ol>
 
 ______
@@ -120,4 +120,94 @@ Software Myths
 --------------
 Some myths(बातें जो सबको सच लगती है but नहीं है) regarding Software developement:
 
-अभी आगे लिखूंगा
+<ul>
+	<li> <b><ins> They are easy to change: </ins></b> yes, we can easily alter the source code
+		but if we say that it is easy to make changes in the software, it is wrong. Making 
+		changes without introducing errors is extremely difficult especially in ill-handled
+	softwares</li> <br>
+	<li> <b><ins> Testing removes all errors: </ins></b> Software Testing is done, to make the
+		software as bug-free as possible. But, we can never find all the bugs in a simple
+	software test, they can only be found with time. </li><br>
+	<li> <b><ins> Resuing software makes it error-proof: </ins></b> Reusability of code is a 
+		power that we desire and it creates a ceratin level of security. However, without 
+		analising it and testing we cannot determine that it will not have any bugs for
+	our current software. </li><br>
+	<li> <b><ins> More features -> Better Software: </ins></b> The truth is the opposite, the
+		best softwares are those which perform only a single task but very efficiently
+	</li><br>
+	<li> <b><ins> More developers -> Faster Developement: </ins></b> This might be true for
+		civil and mechanical engineering but isn't true for SE becuase more people might 
+		create confusion and everyone is at a different skill level. 
+	</li> <br>
+	<li> <b><ins> Main aim is to produce working software: </ins></b> This was true in the
+		past. but now the focus of the developer community has shifted to making more 
+		good quality and easily maintainable programs, rather than simply working programs
+	</li> 
+</ul>
+
+_______
+
+Role of Management in Software Developement
+------------------------------------------
+(ek manager coding process me kaise madad kar sakta hai)
+
+The management of software developement is heavily dependent on 4 factors: <br>
+People<br>
+Product<br>
+Process<br>
+Project<br>
+
+People
+------
+<ul>
+	<li> Crucial to any software developement process is selecting the right persons
+		to work on that project that have a proper training and work culture.
+	</li> 
+	<li> <b>Manager:</b> Having a good project manager decreases the probability of
+		a software failure. It is the responsibilty of a manager to motivate, guide,
+		encourage and control his team. 
+	</li>
+	<li> <b>Coder:</b> Competent coders make the backbone of any software project.
+		Coders with insufficient skills for a project will not only lead to delay
+		but also increases the probability of software failure
+	</li>
+</ul>
+
+Product
+-------
+<ul>
+	<li> A product should be the solution to all the customer's problems. </li>
+	<li> Objectives and scope of work should be clearly defined to understand all the
+		requirements. A manager should also discuss alternate solutions
+	</li> 
+	<li> Manager should select the best approach within the given constraints i.e-
+		deadline, budget, available tecnhology and people. 
+	</li>
+	<li> Without clear requirements, it is impossible to make a product a product 
+		with reasonable cost in suitable time </li>
+</ul>
+
+Process
+-------
+<ul>
+	<li> The process in which we make software can increase or decrease the probability
+		of making the perfect software. Although, process priority is after people and 
+		product it still plays a critical role in success of project.  
+	</li>
+	<li> There are various models available nowadays to select a suitable process </li>
+	<li> We can set various milestones to encourage the team and take up various 
+	activities to suitably fulfill all the requirements. </li>
+</ul>
+
+Project
+-------
+<ul>
+	<li> Manager must do a proper planning and should monitor the status of developement
+		to control the complexity. </li>
+	<li> Most projects come late and overrun budget. To make a successful software, manager
+		must understand what can go wrong and what can go right. </li>
+	<li> Proper plan should always be in place becuase software surprises(when the customer
+		suddenly changes the requirements of a project) are always risky</li>
+</ul>
+
+____
