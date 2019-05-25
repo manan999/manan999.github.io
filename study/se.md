@@ -128,7 +128,7 @@ Some myths(बातें जो सबको सच लगती है but �
 	<li> <b><ins> Testing removes all errors: </ins></b> Software Testing is done, to make the
 		software as bug-free as possible. But, we can never find all the bugs in a simple
 	software test, they can only be found with time. </li><br>
-	<li> <b><ins> Resuing software makes it error-proof: </ins></b> Reusability of code is a 
+	<li> <b><ins> Reusing software makes it error-proof: </ins></b> Reusability of code is a 
 		power that we desire and it creates a ceratin level of security. However, without 
 		analising it and testing we cannot determine that it will not have any bugs for
 	our current software. </li><br>
