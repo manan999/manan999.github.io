@@ -38,11 +38,12 @@ It is a science whose aim is the production of quality software that is delivere
 budget and that satisfies its requirements.<br>
 Software has become an important part of all human industries, but their are some serious problems
 regarding the cost, timeliness, maintainence ad quality of software products. <br>
-<b><u>Software Engineering</u></b> aims to solve all these problems by producing a quality, 
+<b><ins>Software Engineering</ins></b> aims to solve all these problems by producing a quality, 
 maintainable software on time and within budget.
 
 ____
 
 Software Process
 ---------------
+The way in which we produce software is called <b><ins>Software Process.</ins></b>
 
