@@ -46,4 +46,78 @@ ____
 Software Process
 ---------------
 The way in which we produce software is called <b><ins>Software Process.</ins></b>
+<ol>
+	<li> Varies from organisation to organisation </li>
+	<li> Requires hiring smart & knowledgeable developers and buying the latest 
+		developement tools. </li>
+	<li> Should be effective so that developers can use the best technical practices
+		 to successfully make a software. </li>
+</ol>
 
+Difficulties in improving Software Process
+------------------------------------------
+
+<ol> 
+	<li> <b><ins> Lack of Time: </ins></b> There is always a shortage of time. Developement
+		schedules are unrealistic and leave very less time to do anything other than coding.
+		Customers demand more softwares, with high quality in the least amount of time. </li>
+	<br>
+	<li> <b><ins> Lack of Knowledge: </ins></b> Most organisations don't even know the best 
+		practices in the industry to develope software. Developers only read about coding and
+		not about testing or quality. </li> <br>
+	<li> <b><ins> Wrong Motivations: </ins></b> Many developers fail to understand the benefit 
+		of a clear developement process and simply try to evade it. They are not motivated about
+		meeting their commitments, improving customer satisfaction and delivering excellent 
+	products. </li> <br>
+	<li> <b><ins> Insufficient Commitment: </ins></b> Many times, the software process improvement
+		fails, simply due to lack of commitment. This is because people fail to follow the actual
+		changes. Even the management has no expectation from developers about this. There is no
+	clear plan. Thus, no process improvement. </li> <br>
+</ol>
+
+________
+
+Software Characteristics
+------------------------
+
+**Some important characteristics of a software:**
+
+<ul>
+	<li> <b><ins> No Lifetime: </ins></b> As we know, that hardware products wear out with time
+		and their probability of failure increases. However, a software does not wear out with
+		time. Software can become obsolete, but that is due to change in environment only.
+	</li> <br>
+	<li> <b><ins> Easy to Manufacture: </ins></b> Software developement is a one-time effort
+		and continous maintainence. It is not hard to make 1000 copies of a software. Unlike
+	hardware, it does not take raw material and cost for each single unit </li> <br>
+	<li> <b><ins> Reusable Components: </ins></b> We can design standard components which 
+		can be reused in various projects so we dont have to write everything from scratch.
+		</li><br>
+	<li> <b><ins> Flexible: </ins></b> A software can be made to do almost anything. However, 
+		this "almost anything" make software difficult to plan and control. But, softwares
+	can accomodate almost any kind of change. </li><br>
+</ul>
+
+_____
+
+Types of Software
+-----------------
+Isme har ek ka matter khud hi likh lena, badi baat nahi hai
+<ol>
+	<li> System Software (e.g- Windows, Android) </li> <br>
+	<li> Real-Time Software (e.g- Weather Forecasting, Temperature Monitor) </li> <br>
+	<li> Embedded Software (e.g- Security System, Signal System) </li> <br>
+	<li> Business Software (e.g- MS Office, Accounts) </li> <br>
+	<li> Personal Software (e.g- Games, Media Player) </li> <br>
+	<li> Artificial Intelligence (e.g- Cortana, Alexa) </li> <br>
+	<li> Web Based Software (e.g- web apps) </li> <br>
+	<li> Engineeing & Scientific (e.g- To perform scientific calculations) </li> <br>
+</ol>
+
+______
+
+Software Myths
+--------------
+Some myths(बातें जो सबको सच लगती है but नहीं है) regarding Software developement:
+
+अभी आगे लिखूंगा
