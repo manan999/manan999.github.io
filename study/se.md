@@ -350,3 +350,54 @@ ____
 Evolutionary Process Model 
 --------------------------
 
+It resembles the Iterative Enchancement Model, it has the same phases as Waterfall Model
+occuring in a cyclic manner. However, there is no usable product at the end of each cycle
+and cycles are based catergory of requirements rather than priority.
+
+For example, in a software using this model, we may first design its GUI and only GUI,
+then file storgae system ,then database and so on, till we have a usable product.
+
+Iterative Model would have started by creating a simplistic version of software in the 
+beginning with simple graphics, database and everything else. The software would become
+more and more sophisticated as more and more features are added with each cycle.
+
+<ul> <b> Advantages: </b>
+  <li> Suitable when there is no need for a minimal version quickly </li>
+  <li> Best when working with newer technologies which is not well understood by the
+    developers.</li>
+  <li> Suitable for large and complex project that must be delivered at one time</li>
+  <li> Suitable for projects with unclear requirements in the beginning </li>
+</ul>
+
+____
+
+Prototyping Model
+-----------------
+
+This model builds on the biggest drawback of waterfall model(that a usable product is
+not available until a very late stage). This model aims at creating a working prototype
+of the project in beginning.
+
+Prototype is based on major requirements only. It has low reliability, less functionality
+and untested performance.
+
+This model is used to make a correct SRS document becuase the prototype has been 
+evaluated by the customer and now, SRS will be much better. This feedback removes 
+developer uncertainities.
+
+Prototype may be a usable program, but it is not suitable as a software. Its code is 
+generally thrown away, but the experience gained makes the resultant system better.
+Therefpre, prototype may be costly, but overall costs are lower.
+
+<ul>
+  <b> Drawbacks </b>
+  <li> Not suitable when time is very less</li>
+  <li> REquires extensive user participation which not always possible</li>
+  <li> Might not be used as a standalone model(for example, once the SRS is clear, we
+  may want to develope using waterfall model) </li>
+</ul>
+
+_____
+
+Spiral Model
+------------
