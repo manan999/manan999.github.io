@@ -248,7 +248,7 @@ Its 5 phases are as follows
           and how it shall do it. This document is called the SRS(Software Requirement
         Specification)</li>
        </ul> 
-  </li>
+  </li><br>
   <li> <ul> <ins><b> Design Phase: </b></ins>
         <li> Main aim of this phase is to convert the SRS document into a structure that is
           suitable for implementation in some programming language. </li>
@@ -257,11 +257,11 @@ Its 5 phases are as follows
         <li> Work of this phase is documented in a <ins>SDD(Software Design Description)</ins>
         which is a documented containing information sufficient to begin coding.</li>
       </ul>
-  </li>
+  </li><br>
   <li> <ins><b> Implementation(Coding): </b></ins> In this phase the design is implemented.
       If SDD is complete and proper, this phase proceeds smoothly because all the required
       information would be contained in SDD
-  </li>
+  </li><br>
   <li> <ul> <ins><b> Testing: </b></ins> 
         <li> Major activities are related to examination and modification of the code</li>
         <li> Efficient test will lead to a higher quality product, satisfied customer, 
@@ -273,7 +273,7 @@ Its 5 phases are as follows
             Testing</b></li>
         <li> <b> System Testing </b> is of the entire system with software included. It 
         builds the confidence of customer in our product</li>
-    </ul></li>
+    </ul></li><br>
     <li> <ul> <ins><b> Software Maintainence: </b></ins>
           <li> It is performed after the delivery of the required software </li>
           <li> It is the phase which required most effort and is most challenging </li>
@@ -285,7 +285,7 @@ Its 5 phases are as follows
     </li>
 </ol>
 
-Problems with this model
+<b>Problems with this model</b>
 <ul>
   <li> It is very ideal. As it is difficult to define all the requirements in the beginning
   of a project</li>
@@ -297,3 +297,56 @@ Problems with this model
 </ul>
 
 ____
+
+Iterative Enhancement Model
+---------------------------
+
+This model has the same phases as Waterfall Model but with fewer restrictions. Phases occur 
+in the same order as Waterfall Model, but they may be conducted in several cycles, with a 
+usable product released at the end of each product. Each cycle gives some additional 
+functionality.
+
+<ul> <b> Features</b>
+  <li> It occurs in various cycles </li>
+  <li> In requirement analysis phase, the customers and developers specify as much requirements
+    as possible. Then, they are arranged in the order of priority</li>
+  <li> Design, Coding and Testing is done based on this priorities in one or more cycles</li>
+  <li> Main aim of models like waterfall and prototyping is to deliver a high-quality product;
+      But this model delivers a product that satisifes only some of customer's needs after every
+      cycle</li>
+  <li> A product will usually have many releases but the first version can be available as early
+      as within a few weeks. Whereas, waterfall model may take months or even years to give 
+    first usable product</li>
+</ul>
+
+____
+
+Rapid Application Developement(RAD) Model
+-----------------------------------------
+
+In this model, user involvement is essential from requirement phase uptil delivery. This ensures
+that the user's expectations and perspective is understood before design and implementation.
+
+This model has 4 phases:
+<ul> 
+  <li> <b><ins> Requirements Planning: </ins></b> Requirement may be gathred using any, of the
+  elicitation techniques(like FAST, QFD, etc). Complete user involvement is essential.</li>
+  <li> <b><ins> User Description: </ins></b> Joint teams of customers and developers seek to
+  understand review the requirements</li>
+  <li> <b><ins> Construction Phase: </ins></b> This combines the design, coding and testing 
+  phases of waterfall model and release the product to customer.</li>
+  <li> <b><ins> Cut Over Phase: </ins></b> Testing is accepted by customer, software is 
+  installed and users are trained </li>
+</ul>
+
+<ul> <b> Drawbacks: </b>
+  <li> Very time consuming, as each and every aspect is discussed with the user </li>
+  <li> May not be vey effective on large scale projects </li>
+  <li> Requires highly experienced and skilled developers, eho may not be easy to find</li>
+</ul>
+
+____
+
+Evolutionary Process Model 
+--------------------------
+
