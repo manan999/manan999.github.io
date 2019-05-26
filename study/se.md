@@ -545,7 +545,18 @@ This process is generally carried out after interview and/or brainstorming.
 
 Use Case Approach
 -----------------
-Baad me likh dunga
+When we represent the system graphically, using a combination of text amd pictures in order to 
+improve the understanding of requirements amd describe the "what" of system, it is known as
+Use Case Diagram. Using A Use Case Diagram, is known as Use Case Approach
+
+An <b> Actor </b> is any external agent that lies outside the system model, but interacts with
+it in some way. It is represented as a stick figure and is not a part of system itself.
+
+A <b> Use Case </b> is a sequence of actions between actors and system, necessary to deliver a 
+certain service. Use Cases are written in an easy to understand structure, customers may 
+validate use case and it will lead to requirement gathering.
+
+(Draw Diagram)
 
 ____
 Requirement Analysis
@@ -573,7 +584,26 @@ ____
 Data Flow Diagram
 -----------------
 
-Baad me hi likhunga
+They are used for modelling the requirements, they show the flow of data in a system(in our
+case software system).The following features about the DFD are important-
+<ul>
+	<li> All unit names in DFD should be unique </li>
+	<li> It is not a flow chart. Arrows represent <b> Flow of data</b> not sequence of 
+		events </li> 
+	<li> Use only standard symbols (circle for units and arrows for data flow) </li>
+	<li> Keep It Simple </li>
+</ul>
+
+DFD may be used to represent any level of abstraction. It is divided into levels representing
+increasing fucntional detail
+
+A <b> level-0 DFD </b> also known as <b><ins>"Context Diagram"</ins></b> which represents entire 
+softare as a single bubble, with input and output indicated by incoming and outgoing arrows 
+respectively.
+
+As the bubbles are decomposed into less and less abstract bubbles, the corresponding data flows
+are also decomposed. A <b>Level-1 DFD</b> provides a detailed view of the entire system, the
+requirements and flow of data from one bubble to another.  
 
 ____
 
@@ -617,6 +647,10 @@ Characteristics of a good SRS
 		be made easily without making the meaning unclear and disturbing the rest of document
 	structure. </li>
 </ol>
+
+___
+
+This completes with Unit 2; you can find Unit 3 onwards in "se2.md" 
 
 ____
 
