@@ -545,6 +545,78 @@ This process is generally carried out after interview and/or brainstorming.
 
 Use Case Approach
 -----------------
+Baad me likh dunga
+
+____
+Requirement Analysis
+--------------------
+We review each and every requirement and make sure it is clear and consistent with all other
+requirements. Various steps of Requirement Analysis are-
+
+<ol>
+	<li> <b><ins> Draw the context diagram: </ins></b> It is a simple model that defines the 
+		boundaries and interaction with external worlds. It identifies the outside entities
+		which may interact with the system. </li>
+	<li> <b><ins> Develope a Prototype: </ins></b> Effective way to find out what customer 
+		really wants, is a prototype. We use the feedback to gain experience & understand 
+		the system. <b> This is only an optional activity</b></li>
+	<li> <b><ins> Model the requirements: </ins></b> It consists of describing entities in the
+		system in a graphical manner and representing relationships between them. It helps
+		in finding inconsistencies, if any</li>
+	<li> <b><ins> Finalise the Requirements: </ins></b> After modeling, and removing 
+		inconsistencies and ambiguities; we now list the final requirements in a prescribed
+		format </li>
+</ol>
+
+____
+
+Data Flow Diagram
+-----------------
+
+Baad me hi likhunga
+
+____
+
+Requirement Documentation
+-------------------------
+The requirement document is known as the Software Requirement Specifications(SRS). It is a 
+specification that a particular software will perform certain functions.
+
+A good SRS reduces the probability of customer dissatisfaction and increases the probability 
+of a good software overall. 
+
+<ul> <b><ins> Basic need of SRS </ins></b>
+	<li> <b> Functionality: </b> What is the software supposed to do? </li>
+	<li> <b> External Interaction: </b> How does the software interact with hardware, other
+		software and people. </li>
+	<li> <b> Performance: </b> What should be the speed, response time, recovery time, etc of
+		various software function? </li>
+	<li> <b> Attributes: </b> What are the features for portability, correctness, security, 
+		maintainability, etc ? </li>
+</ul>  
+
+Characteristics of a good SRS
+-----------------------------
+
+<ol> A good SRS should be -
+	<li> <b><ins> Correct: </ins></b> It is correct only if each and every requirement that
+		is listed would be fulfilled by the software. No exaggerations or holdbacks. </li>
+	<li> <b><ins> Unambiguous: </ins></b> Each requirement that is stated, has only one 
+		interpretation. If a particular term has contextual meaning, it should be made 
+		clear </li>
+	<li> <b><ins> Complete: </ins></b> SRS should list all significant requirements(like design,
+		functionality, performance, etc), their responses to software situations(both valid and
+		invalid responses) and table, diagrams, charts(if any)</li>
+	<li> <b><ins> Consistent: </ins></b> No 2 or more requirements contradict each other and 
+		describe the same overall theme. They should all have a similar format also. For example, 
+		One requirement says color should be blue, no other should state any other color</li>
+	<li> <b><ins> Verifiable: </ins></b> It should use terms which have a process to measure 
+		that particular term(verify it). Should not use words like (good, pretty well, etc) 
+		because there is no parameter to measure if something is good. </li>
+	<li> <b><ins> Modifiable: </ins></b> Its structure and style should be such that changes can
+		be made easily without making the meaning unclear and disturbing the rest of document
+	structure. </li>
+</ol>
 
 ____
 
