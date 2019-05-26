@@ -401,3 +401,71 @@ _____
 
 Spiral Model
 ------------
+Major problem with all software models are that they can't deal with uncertainity, which is 
+almost always present in Software projects. Important projects failed becuase the risks were
+neglected and nobody was prepared to face these risks. This Model, developed by Barry Bohem, 
+recognised this "risk factor" and presented a spiral model.
+
+Radius of this model keeps on increasing, representing cumulative(ever-increasing) costs. Each
+loop along the x-axis represents one phase. Each phase split into 4 sectors:
+<ol> 
+	<li> <ins><b> Planning: </b></ins> Determining objectives, constraints and alternatives.
+	</li>
+	<li> <ins><b> Risk Analysis: </b></ins> Analyze the alternatives and identify the possible
+		risks involved .</li>
+	<li> <ins><b> Development: </b></ins> Product development and testing </li>
+	<li> <ins><b> Assessment: </b></ins> Evaluation, done by customer </li>
+</ol>
+
+<ul> <ins><b> Advantages </b></ins>
+	<li> Wide range of options, it can be used to implement good features of all other 
+		models </li>
+	<li> Risk analysis, reduces testing time and rectifies errors at an early development
+		phase </li>
+	<li> It deals easily with uncertainity</li>
+</ul>
+
+<ul> <ins><b> Drawbacks: </b></ins>
+	<li> It is to complex to be utilised as a real-life development model </li>
+	<li> It does not provide any processes and guidance to determine objectives, risks, 
+		constraints and alternatives </li>
+	<li> It provides too much flexibility, which is bad in some situations</li>
+</ul>
+
+_____
+
+Requirements Engineering
+------------------------
+
+<ul>
+	<li> It is done to produce a large document(SRS) which is written in easy language and
+		contains a detailed description of what the system will do, without describing, how 
+	it will do</li>
+	<li> The input to requirements engineering is given by the customer. </li>
+	<li> It gives an overview of existing system, alongwith broad expectations from new 
+		system </li>
+	<li> One of the most crucial activity in software development, because without a good 
+		and easy to read SRS, developers will not know what to build, customers will not
+		know what to expect and no way to check if the system built is satisfactory .</li>	
+</ul>
+
+<ol> <ins><b> Steps involved in Requirements Engineering </b></ins>
+	<li> <ins><b> Requirement Elicitation: </b></ins> This is also known as gathering of
+		requirements. Here, the requirements are identified with the help of customer
+		and some other processes. </li>
+	<li> <ins><b> Requirement Analysis: </b></ins> Analysing the requirements to identify 
+		defects, omissions and confilcts, if any. </li>
+	<li> <ins><b> Documentation: </b></ins> This is the end product of elicitation & analysis.
+		The SRS document is very important as it will be the foundation for design. </li>
+	<li> <ins><b> Requirement Review: </b></ins> We review the SRS to improve its quality.
+		It is also called Requirement verification.  </li>
+</ol>
+
+____
+
+Requirement Elicitation
+-----------------------
+
+____
+
+Yaha add karna
