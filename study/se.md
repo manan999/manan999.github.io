@@ -465,6 +465,86 @@ ____
 
 Requirement Elicitation
 -----------------------
+Requirement Elicitation is the most critical, yet most difficult and error-prone aspect of software
+developement. It can only succeed through an effective developer-customer communication.
+
+The real requirements only reside in the mind of customer, hence it is the most important to figure 
+out the customer's expectations and desires. This is generally done by asking questions and writing
+their answers, however there is always a chance of inconsistency and misunderstanding due to 
+communication gap.
+
+**There are few Requirement Elicitation Methods**
+
+Interviews
+----------
+<ul>
+	<li> Objective of an interview is to understand the customre's expectations from the software</li>
+	<li> Engineers should be open-minded should not have interview with pre-concevied notions about
+		what the customer wants </li>
+	<li> It may be open-ended or structured </li>
+	<li> We may interview any one of themany stakeholders like (Managing Directors, Project Managers
+		, Users of software or low-level employees) </li>
+</ul>
+
+Brainstorming
+-------------
+Group technique to promote positive thinking and new ideas. Its main purpose is to generate a lot
+of ideas, because a long-list of requirements is better than having nothing and requirements
+can always be categorised and prioritised.
+
+This technique is becoming more and more poular nowadays. It is usually done with specialised
+groups like actual users, middle level employees, stakeholders. 
+
+A highly efficient facilitator may also be required, to handle group conflicts or bias. He/She 
+can encourage group behavious and discourage individualistic behaviour.
+
+Every idea is documented in simple language and a report is generated which can be reviewed by 
+facilitator. Ideas are listed and if possible, made into requirements with priorities assigned.
+
+Facilitated Application Specification Technique
+-----------------------------------------------
+
+Their appraoch is similar to Brainstorming but the main purpose is to reduce the expectation
+gap. This approach encourages the creation of joint teams of customers and developers, who
+work together to understand the expectations and propse a set of requirements.
+
+<ul><ins><b>Guidelines for a FAST session:</b></ins>
+	<li> Arrange a meeting at neutral site for developers & customers </li>
+	<li> Prepare an informal agenda to promote free-flow of ideas </li>
+	<li> Appoint a facilitator to control the meeting. He may be a developer or an outside 
+		expert </li>
+	<li> Establish rules for participation and prepare board, flipcharts, worksheets, etc </li>
+</ul>
+
+Quality Function Deployment
+---------------------------
+The main purpose is to translate the voice of customers into technical requirements. These 
+requirements lead to creation of SRS document. 
+
+This method gives the prime importance to customer satisfaction and the requirements are 
+divided into 3 categories-
+<ol>
+	<li> <b><ins> Normal Requirements: </ins></b> If this category of requirements are 
+		present the customer will be satisfied. They are essential to the software that
+		is being developed and must not be excluded. For example- For a Student Result
+		Management System we must have aggregate calculation, merit list, failure list,
+		report generation, etc </li>
+	<li> <b><ins> Expected Requirements: </ins></b> These requirements are implicit to
+		the software. These may be so obvious that customer doesnt even mention them
+		explicitly(alag se). But if they are not present, customer will be dissatisfied.
+		For example- For a Student Result Management System there is protection from 
+		unauthorised access, warning for wrong entry of data, time stamp, identification
+		, etc </li>
+	<li> <b><ins> Exciting Requirements: </ins></b> These requirements may be beyond 
+		customer's expectation but will be very satisfying if they are present. For example
+		- in a student result management system we may have a backup system, admin functions,
+		virus protection, etc </li>
+</ol>
+	
+This process is generally carried out after interview and/or brainstorming.
+
+Use Case Approach
+-----------------
 
 ____
 
