@@ -72,3 +72,109 @@ called glue that keeps a module together.
 	<li> <b> Logical Cohesion: </b> </li>
 	<li> <b> Coincidental Cohesion: </b> </li>
 </ul>
+
+______
+
+SOFTWARE TESTING 
+----------------
+
+<ul> 
+	<li> Software is written everywhere, however it is almost never perfect. The process of demonstrating
+		that a software is error-free is known as <b><ins> Software Testing. </ins></b> </li>
+	<li> Main purpose of testing is to show that a program performs its intended functions correctly.
+	</li>
+	<li> It is the process of establishing confidence in a program. </li>
+	<li> It can also be called, executing a program with the intention of finding errors. </li>
+</ul>
+
+Why should we test?
+------------------
+
+<ul>
+	<li> Although, Testing is expensive, but launching a software without testing may prove even
+		expensive, especially when human safety is involved </li>
+	<li> No one can even think of releasing an untested software for applications like surgery
+		machines and auto-driven vehicles. </li>
+	<li> The earlier an error is found, the least its cost of removal. The most damaging & harmful
+		errors are those which are not found even after testing. </li>
+	<li> As it is impossible to test for each & every input and make a software 100% error-free, 
+		teeting and error correction continues until the removal cost is less than potential damage. </li>
+</ul>
+
+Who should test?
+----------------
+<ul> 
+	<li> Most organisations have different phases & people for development and testing, because it is 
+		difficult to find error in your own creation. </li>
+	<li> Developer may provide guidelines for testing but entire responsibility should be on tester</li>
+	<li> This also works becuase human ego likes to find faults with the work of others. Thus, a tester
+		(consciously or sub-consciously) will work hrader to find error in others' programs. </li>
+</ul>
+
+_____
+
+Important Terms
+---------------
+<dl>
+	<dt> Error ( Synonym: Mistake, Bug ) </dt>
+	<dd> When the programmer writes wrong syntax or logic. </dd>
+	<dt> Fault ( Synonym: Defect) </dt>
+	<dd> It is the representation of an error. (How an error affected the system.) <br>
+		For example, if a programmer accidentaly puts '-' instead of '+', it is an error. <br>
+		When we get wrong answer or further calculation due to error, it is a fault </dd>
+	<dt> Failure </dt>
+	<dd> The deviation of a program from expected behaviour or output. It is the result of 
+		a fault </dd>
+</dl>
+<br>
+<dl>
+	<dt> Test Case </dt>
+	<dd> It consists of an input description(pre-condition and actual input) and an expected
+		output description(actual output and post-condition) . </dd>
+	<dt> Test Suite </dt>
+	<dd> A set of Test Cases is called a Test Suite </dd>
+</dl>
+<br>
+<dl>
+	<dt> Verification </dt>
+	<dd> The process of evaluating a system to determine whether the product satisfies the 
+		conditions imposed at the start of development phase </dd>
+	<dt> Validation </dt>
+	<dd> The process of evaluating a system at the end of development phase to determine
+		whether it satisfies all the requirements. </dd>
+</dl>
+
+________
+
+Types of Testing 
+----------------
+
+<ol>
+	<li> <ul> <b><ins> Acceptance Testing: </ins></b> 
+			<li> This is done when, software is developed for a specific customer. </li>
+			<li> A series of tests are conducted by customer itself to check whether the
+				software satisfies all requirements. </li>
+			<li> It may include ad-hoc or planned & systematic test. </li>
+			<li> It may run for weeks to months </li>
+			<li> All the errors found, will be recified before delivery to customer </li>
+		</ul></li>
+	<li> <ul> <b><ins> Alpha Testing: </ins></b>
+			<li> Done when customers are anonymous(done for products), so acceptance testing
+				is not possible </li>
+			<li> A set of possible customers are identified and tests are performed at
+				developer's site </li>
+			<li> They are performed in a controlled environment. </li>
+		</ul>
+	</li>
+	<li> <ul> <b><ins> Beta Testing: </ins></b>
+			<li> It is also done for anonymous customers. </li>
+			<li> Tests are conducted at customer's own site </li>
+			<li> Done in a real environment out of developer control. </li>
+			<li> Customers are expected to report any bugs or failures and they are fixed before
+			the final release. </li>
+			<li> Main Advantage of &alpha; & &beta; tests is that company's reputation is not
+				at stake, even in case of a failure </li>
+	</ul> </li>
+</ol>
+
+_________
