@@ -21,6 +21,8 @@ Free Vector Image ----> https://undraw.co/illustrations ----> Might be Helpful
 
 Free Icons ----> http://www.entypo.com  ----> Might be needed
 
+Free Icons 2 ---> https://www.ikonate.com ---> Much better
+
 
 
 CSS
@@ -75,4 +77,4 @@ https://devinduct.com/blogpost/22/javascript-clean-code-best-practices  ----> Mu
 How to Think like a Programmer ---> Read When Time --->
 https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/
 
-search nod module recirsive
+search node_modules recursive delete
