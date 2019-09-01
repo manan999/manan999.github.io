@@ -19,6 +19,9 @@ To Draw a line between 2 points A & B -
 		</code>
 	</li>
 	<li>
+		Calculate b (intercept) as
+		<code> b = y<sub>1</sub> - m * x<sub>1</sub> 
+		</code>
 	</li>
 </ol>
 
