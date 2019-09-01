@@ -38,11 +38,29 @@ To Draw a line between 2 points A & B -
 		<code> x = x<sub>1</sub> , y = y<sub>1</sub> </code><br/>
 		Plot Pixel (x, y) <br/>
 		<br/>
-		If &delta;x < 0 <br/>
+		If &Delta;x < 0 <br/>
 		Go to Step 8
 		Else <br/>
 		Go to Step 7
 	</li>
+	<li> Increment x till x <= x<sub>2</sub> <br/>
+		 Calculate <code> y = m * x + b </code> <br/>
+		 Plot Pixel (x, y)
+	</li>
+	<li> ( Only When &Delta;x < 0 ) <br/>
+		Decrement x till x >= x<sub>2</sub> <br/>
+		Calculate <code> y = m * x + b </code> <br/>
+		Plot Pixel (x, y)
+	</li>
 </ol>
 
 ___ 
+
+```C
+// To Plot a Line between 2 points using its Eqaution
+#include<stdio.h>
+#include<conio.h>
+
+```
+
+___
