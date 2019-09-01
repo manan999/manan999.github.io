@@ -34,6 +34,15 @@ To Draw a line between 2 points A & B -
 		<code> b = y<sub>1</sub> - m * x<sub>1</sub> 
 		</code>
 	</li>
+	<li> Let <br/>
+		<code> x = x<sub>1</sub> , y = y<sub>1</sub> </code><br/>
+		Plot Pixel (x, y) <br/>
+		<br/>
+		If &delta;x < 0 <br/>
+		Go to Step 8
+		Else <br/>
+		Go to Step 7
+	</li>
 </ol>
 
 ___ 
