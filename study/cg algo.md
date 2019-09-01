@@ -59,7 +59,56 @@ ___
 ```C
 // To Plot a Line between 2 points using its Eqaution
 #include<stdio.h>
+#include<graphics.h>
 #include<conio.h>
+#define COLOR 15
+
+void drawVertical(float x1, float y2, float y1)
+{       float y ;
+	for( y = y1 ; y <= y2 ; ++y)
+		putpixel(x1, y, COLOR) ;
+}
+
+void drawLine(float x1, float x2, float y1, float y2)
+{	float x, y , dx = x2-x1 ;
+	float m = (y2-y1) / dx ;
+	float b = y1 - (m * x1) ;
+	x = x1 ;
+	if(dx > 0)
+	{	for( ; x <= x2 ; ++x )
+		{	y = (m*x) + b ;
+			putpixel((int)(x+0.5), (int)(y+0.5), COLOR) ;
+		}
+	}
+	else
+	{	for( ; x >= x2 ; --x)
+		{	y = (m*x) + b ;
+			putpixel((int)(x+0.5), (int)(y+0.5), COLOR) ;
+		}
+	}
+}
+
+void main()
+{       float x1, x2, y1, y2 ;
+	int gd = DETECT, gm ;
+	clrscr() ;
+
+	printf("Enter Co-Ordinates of Starting Point\n") ;
+	scanf("%f %f", &x1, &y1) ;
+	printf("Enter Co-Ordinates of Ending Point\n") ;
+	scanf("%f %f", &x2, &y2) ;
+	getch() ;
+
+	initgraph(&gd, &gm, "C:\\TURBOC3\\BGI") ;
+
+	if(x2-x1 == 0)
+		drawVertical(x1, y2, y1) ;
+	else
+		drawLine(x1, x2, y1, y2) ;
+
+	getch() ;
+	closegraph() ;
+}
 
 ```
 
