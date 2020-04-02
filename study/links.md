@@ -1,3 +1,6 @@
 LINKS
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+<ol>
+  <li> JavaScript basics revision -----> https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+  </li>
+</ol>
