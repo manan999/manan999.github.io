@@ -1,0 +1,41 @@
+.cont-choice
+{
+	background-color: rgb(96, 172, 235) ;
+	margin: 0 1em 1em ;
+}
+
+.choices
+{
+	display: flex ;
+}
+
+.choice-box
+{	border: 2px solid rgb(29, 41, 81);
+	margin: 0.5em 0.2em ;
+	padding: 0.5em 2em ;
+	background-color: rgb(29, 41, 81) ;
+	color: rgb(96, 172, 235);
+	font-size: 1.5rem ;
+	font-weight: bold ;
+	transition: all 0.4s ;
+	letter-spacing: 0.05em ;
+}
+
+.choice-box:hover
+{
+	color: rgb(29, 41, 81);
+	background-color: rgb(96, 172, 235)
+}
+
+.c-active
+{
+	color: rgb(29, 41, 81);
+	background-color: rgb(130, 195, 250) ;
+	border : 2px solid rgb(130, 195, 250);
+	border-top : 2px solid darkblue;
+}
+
+.c-active:hover
+{
+	background-color: rgb(130, 195, 250) ;
+}
