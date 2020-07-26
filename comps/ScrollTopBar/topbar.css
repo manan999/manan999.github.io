@@ -1,0 +1,17 @@
+.topbar{
+  position: fixed;
+  z-index: 99;
+  height:40px;
+  left:0;
+  top:0;
+  background-color: #fff;
+  width:100%;
+  text-align:center;
+  font-size:22px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+  transition:top .3s;
+}
+
+.hide{
+  top:-40px
+}
