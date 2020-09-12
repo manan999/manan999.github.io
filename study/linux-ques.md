@@ -31,13 +31,46 @@
 	<li> What is MX Record - [2.5] </li>
 	<li><ul>
 		<li> How to check memory usage in Linux? Explain Linux Boot Sequence. - [4] </li>
-		<li> What is LILO (ya fir) Explain LILO - [5] </li>
+		<li> What is LILO <em>(ya fir)</em> Explain LILO - [5] </li>
 		<li> What is GRUB - [6] </li>
 	</ul></li>
 	<li> Explain some Linux Directory & File Commands - [6] </li>
 </ol>
 
 <b>Unit - 2</b>
+----------------------
+
+<ol>
+	<li> How to copy a file? - [2] </li>
+	<li> Why is Linux Virus-free - [5,6] <em> (Isme bhi ajeeb si language ya case study de sakte hai ki jaise How is Linux secure, explain security in linux, ya fir falan virus windows me paya jata hai linux me nahi batao kyu)</em></li>
+	<li><ul>
+		<li> Explain Linux File Security. - [2.5] </li>
+		<li> Explain Linux File Security. How to change permissions? - [6] </li>
+		<li> How to change file and directory permission in Linux? - [2.5, 3] </li>
+		<li> Explain Numerical & Symbolic Method of changing file permission in Linux? - [6, 6.5] </li>
+	</ul></li>
+	<li><ul>
+		<li> What are default Permissions in Linux? - [2.5, 3] </li>
+		<li> How to set Default Permissions in Linux. Can we change permissions of SU? - [6] </li>
+	</ul></li>
+	<li><ul> 
+		<li> What is VI Editor? - [2.5] </li>
+		<li> What is VI Editor? How to execute its code? - [6] </li>
+		<li> What is VI Editor? Explain its Modes and switching. - [6.5] </li>
+	</ul></li>
+	<li><ul>
+		<li> What is Inode in Linux? - [2.5, 4] </li>
+		<li> Explain Inode with help of suitable diagram. - [6.5, 6.5, 6.5] </li>
+	</ul></li>
+	<li><ul>
+		<li> What is archive in Linux? - [3] </li>
+		<li> What is archive? How to compress files/directory using commands. - [6.5] </li>
+		<li> What is archive? Write steps to create archive in Linux. - [7.5] </li>
+	</ul></li>
+	<li> Explain adavntages of gzip & bzip2. What is tar & gunzip - [3.5] </li>  
+</ol>
+
+<b>Unit-3</b>
 ----------------------
 
 <b>Be-Unit</b>
@@ -47,5 +80,5 @@
 	<li> What is the command for removing duplicate sentences? - [2.5] </li>
 	<li> Does "Ctrl+Alt+Delete" work in Linux? Give Reason - [5] </li>
 	<li> What are names of different Serial Ports in Linux - [5] </li>
-	<li> There is one command in Linux which is based on "T-Splitter" used in Plumbing. Explain the working of that command and How is it similar to working of T-Splitter</li>
+	<li> There is one command in Linux which is based on "T-Splitter" used in Plumbing. Explain the working of that command and How is it similar to working of actual T-Splitter. - [2.5] </li>
 </ol>
