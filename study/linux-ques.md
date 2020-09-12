@@ -170,4 +170,5 @@
 	<li> Does "Ctrl+Alt+Delete" work in Linux? Give Reason - [5] </li>
 	<li> What are names of different Serial Ports in Linux - [5] </li>
 	<li> There is one command in Linux which is based on "T-Splitter" used in Plumbing. Explain the working of that command and How is it similar to working of actual T-Splitter. - [2.5] </li>
+	<li> What is GREP? Explain its usage with example. - [2.5] </li>
 </ol>
