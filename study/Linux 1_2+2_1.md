@@ -119,4 +119,150 @@ $ init 5
 ```
 Here, runlevel has been changed to 5 which is GUI mode.
 
+------------------
 
+Archiving in Linux
+------------------
+
+Archiving is the process of the combining multiple files and directories(same or different size) into a single file. On the other hand, compression is the process of reducing the size of of a file(s) or directory(s). 
+
+Archiving is often used as a part of system backups or while moving the data from one system to another. The most common types of archives are:
+<ol>
+	<li> Tar (Tape ARchive) </li>
+	<li> Zip </li>
+</ol>
+
+Tar Command in Linux
+--------------------
+
+Tar is a command which stands for Tape ARchive. It is used to create arhive files from multiple files or directories. The resultant archive will have the extension '.tar'.
+There are 4 main operating modes in tar utility.
+
+c - Create an archive from a file(s) or directory(s).
+x - Extract an archive.
+r - Append files to the end of an archive.
+t - List the contents of the archive.
+
+<strong>Example:</strong> Suppose there exists a folder named work, which contains 3 files, 
+```
+$ ls work/
+ file.txt song.mp3 image.jpg
+```
+Now, we can create an archive in 2 ways, either we can archive the whole directory or we can create an archive of the 3 files.
+```
+$ tar cf work.tar work/
+```
+The above command will create an archive 'work.tar' from the directory work/ . Here, 'c' stands for Creation mode and 'f' stands for File Name. Now, if we want to create an archive from the files we will use the command
+```
+$ cd work
+$ tar cf work.tar file.txt song.mp3 image.jpg
+```
+
+To extract an archive in the current directory we will use 'x' for Extraction Mode
+```
+$ tar xf work.tar
+```
+
+To view the contents of an existing archive without extracting it we can use 't' for Viewing Mode
+```
+$ tar tf work.tar
+ file.txt
+ song.mp3
+ image.jpg
+```
+
+Gzipped and Bzipped Archives
+----------------------------
+
+By default, Tar creates the archive file ending with .tar extension. But, tar command can be used with compression commands gzip and bzip2. (So That archive file also gets compressed). The file ending with .tar extension refers to a plain tar archive but, the file ending with tar.gz or .tgz refers a gzipped archive and the file ending with tar.bz2 or .tbz refers bzipped archive, respectively.
+
+To create a gzipped archive:
+```
+$ tar czf work.tar.gz file.txt song.mp3 image.jpg
+
+//OR
+
+$tar czf work.tgz file.txt song.mp3 image.jpg
+```
+
+gzip archive adds a 'z' flag to the command. Similarly, Bzip2 will add the 'j' flag
+```
+$ tar cjf work.tar.bz2 file.txt song.mp3 image.jpg
+
+//OR
+
+$tar cjf work.tbz file.txt song.mp3 image.jpg
+```
+
+These compression techniques are widely used in Linux becuase of their zero data loss while compression and extraction. They are really fast and efficient while compression. Their size reduction ratio of the compressed file is also very high. However, there is only one major drawback of these, that they are not cross-platform tools. For Windows, it is not easy to extract .tgz files and it takes time. For cross-platform compression we use 'zip'
+
+Zip Archive & Compression
+-------------------------
+
+Zip is simple command that not only creates an archive but also compresses it. Its functioning is equivalent to .tgz or .tbz but it is cross-platform supported and it is very flexible. It also supports many features like multi-part archives, compression rate and encryption.
+
+To create a zip file from a file or directory, we can simply write
+```
+zip work.zip work/
+
+//OR
+
+zip files.zip file.txt file2.txt file3.txt file4.txt
+```
+
+Extracting files is also very simple, and we can use '-l' flag for viewing the contents of the zipped file without extracting it.
+
+```
+unzip files.zip
+
+//OR (if you only want to see contents not extract)
+
+unzip -l files.zip
+```
+
+Zip supports many different features, for example we can create an encrypted archive by using the '-e' flag while creating archive. In the following command, files.zip will be an encrypted archive.
+```
+zip -e files.zip file.txt file2.txt file3.txt file4.txt
+```
+
+We can even specify the compression rate(how much the file should be compressed). In the following command, we are creating an encrypted archive with a compression rate of 9(maximum).
+```
+zip -e -9 files.zip file.txt file2.txt file3.txt file4.txt
+```
+
+Sometimes a single archive file may become large even after compression so we can create a multi-part archive, so that it is easier to share or send through internet. Multi-part archive is a single archive that is divided into many files. For extraction of a multi-part archive all its parts must be in the same directory and extracting any one part will automatically extract other parts also. 
+```
+zip -s 3m files.zip work/
+```
+This command will create a multi-part archive with files 3MB each.
+
+------------------------
+
+Default Permissions in Linux
+----------------------------
+
+In Linux, the default file or directory permissions are decided by umask. The default umask value is 0022, which sets the default permission for a new file or directory. 
+Default permission for a directory is 0777 and for files permissions are 0666 from which the default umask value 0022 is deducted to get the newly created files or directory permission.
+
+Final default permission for a file is calculated as shown below:
+
+Default file permission: 666
+Default umask : 022
+Final default file permission: 644
+
+Final default permission for a directory is calculated as shown below:
+
+Default directory permission: 777
+Default umask: 022
+Final default directory permission: 755
+
+You can change the umask value to appropriate value of what you need based upon the above calculation. For example, if you don’t want anybody other than the user (owner) to do anything on the file or directory then you can give umask as 0077.
+```
+$ umask 0077
+```
+After this, if you create a file or directory, it will have permissions only for the user as shown below:
+```
+$ > testfile
+$ ls -l testfile
+-rw------- 1 sathiya sathiya 0 Mar 17 08:23 testfile
+```
