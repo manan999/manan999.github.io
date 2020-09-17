@@ -206,22 +206,374 @@ Text Formatting in WML
 
 ___________________________________________________________________________
 
-To create a form asking for name, age and sex
----------------------------------------------
+Links in WML
+------------
+
+jaise HTML me link ke liye 'a' hota hai, WML me 'a' to hota hi hai, but ek aur option bhi hai... 'anchor' tag. 
+
+Anchor Tag
+----------
+
+Isse anchor link banate hai but ye akele nahi use hota, it must be used with WML tasks. WML tasks 3 tags hote hai 'go', 'prev' and 'refresh'. Anchor agar use hoga to inke sath hoga, varna nahi hoga. Ye basically batate hai ki link click pe kya hoga.  Image bhi daal sakte ho is tag ke andar normally. 
+
+---matter---
+
+The <anchor>...</anchor> tag pair is used to create an anchor link. It is used together with other WML elements called <go/>, <refresh/> or <prev/>. These elements are called task elements and tell WAP browsers what to do when a user selects the anchor link
+
+You can enclose Text or image along with a task tag inside <anchor>...</anchor> tag pair.
+
 ```
 <?xml version="1.0"?>
-<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN"
-"http://www.wapforum.org/DTD/wml12.dtd">
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
 
 <wml>
-
-<card title="Input Fields">
-<p> Enter Following Information:<br/> 
- Name: <input name="name" size="12"/>
- Age :  <input name="age" size="12" format="*N"/>
- Sex :  <input name="sex" size="12"/> 
-</p>
-</card>
-
+	<card title="Anchor Element">
+		<p> <anchor> 	Next Page : <go href="nextpage.wml"/>	</anchor> </p>
+		<p> <anchor> 	Previous Page : <prev/>		</anchor> </p>
+	</card>
 </wml>
 ```
+the above code will show 2 links, 'Next Page' & 'Previous Page', clicking on them will trigger the default behaviour of WML task elements.
+
+a tag
+------
+
+a tag normal hai jaise HTML me tha, bas 'p' ke andar likhna compulsory hai and preferred way hai link banane ka as compared to anchor. Bas iske andar koi task nahi de sakte. Koi bhi farak nahi hai iska example tum de sakte ho, but fir bhi sahuliyat ke liye example 
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="A Element">
+		<p> Link to Next Page: 
+		   <a href="nextpage.wml">Next Page</a>
+		</p>
+	</card>
+</wml>
+```
+
+__________________________________________________________________________
+
+WML TASKS
+---------
+
+Ye vo elements hai jo browser ko batate hai ki kuch action lena hai naki kuch display karwana hai (jaise react-router me redirect hota hai). jaise ki kisi new card pe jana hai to 'go' use karoge and pichhle card pe jana hai to 'prev' use karoge. Kis task pe kya behaviour hoga, ye pehle se pata hai browser ko(WML ke liye special browser hota hai na). 4 tasks hote hai WML me go, prev, refresh aur noop
+
+---matter---
+
+A WML task is an element that specifies an action to be performed by the browser, rather than something to be displayed. For example, the action of changing to a new card is represented by a <go> task element, and the action of returning to the previous card visited is represented by a <prev> task element. Task elements encapsulate all the information required to perform the action.
+
+WML provides following four elements to handle four WML tasks called go task, pre task, refresh task and noop taks.
+
+Go task
+-------
+
+go matlab new task pe jana, vo to obvious hai, basically attributes samajh lo.
+href link batata hai, method GET ya POST leta hai vo ye batata hai ki agla card kaise fetch hoga(aur koi data send karna hai next card ko, to kar sakte ho). 
+
+---matter---
+
+the &lt;go&gt; task represents the action of going to a new card. 
+<ul> The &lt;go&gt; element supports the following attributes:
+	<li> <strong> href: </strong> Gives the URL of the new card. </li>
+	<li> <strong> method: </strong> Gives GET or POST as method for sending data. /* jo regular baate hoti hai GET POST ki, jaise GET me URL me data jata hai, kam secure hai, kam data bhej sakte ho, POST me body me data jata hai; vo sab yaha par same hai */</li>
+</ul>
+
+Normal Example
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="GO Element">
+		<p> <anchor> Chapter 2 : <go href="chapter2.wml"/>	</anchor>	</p>
+	</card>
+</wml>
+```
+
+Sending data with GET example (x = 17, y = 42)
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="GO Element">
+		<p> <anchor> Using Get Method 
+		      <go href="chapter2.wml?x=17&y=42" method="get"/>
+		   </anchor> </p>
+	</card>
+</wml>
+```
+
+Sending data with setvar example
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="GO Element">
+		<p> <anchor> Using setvar:
+			  <go href="chapter2.wml"> 
+			      <setvar name="x" value="17"/> 
+		  	      <setvar name="y" value="42"/> 
+			  </go>
+		   </anchor> </p>
+	</card>
+</wml>
+```
+
+Prev Task
+---------
+
+jab 'prev' likha jata hai to, browser ki history me se pichhle card load kar liya jata hai autoamtically, koi location specify karne ki zarurat nahi hai. Agar history empty hai to 'prev' work nahi karega. Agar prev me koi setvar hai to pichle card ko variables ki values send ho jayengi. Kyonki kuch cases me aisa ho sakta hai ki previous page pe kisi variable ki value change kari gayi ho jo tum ab dubara change karna chahte ho, for example login page me user ne password bhara hoga, lekin ab tum firse reset karwana chahte ho
+
+---matter---
+
+The <prev> task represents the action of returning to the previously visited card on the history stack. When this action is performed, the top entry is removed from the history stack, and that card is displayed again. 
+
+It happens only after any <setvar> variable assignments in the <prev> task have taken effect. If no previous URL exists, specifying <prev> has no effect.
+
+Simple Example: (with no prolog and wml tag)
+```
+<card title="Prev Element">
+	<p> <anchor>
+        Previous Page :<prev/>
+	</anchor> </p>
+</card>
+```
+
+Returning to previous with setvar value sending example:
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="Prev Element">
+		<p> <anchor> <prev>
+           <setvar name="password" value=""/>
+		</prev> </anchor> </p>
+	</card>
+</wml>
+```
+
+Refresh Task
+------------
+
+Iska kaam simply current card ko reload karna hai, generally iske andar setvar de dete hai taaki new values ke sath hi current page load ho jaye. (Jaise kaam setstate ka hota hai, lekin ye kaafi heavy hai). Otherwise, ye task sabse simple hai and isme koi link vugrah kisi cheez ki zarurat nahi hai. 
+
+---matter---
+
+The <refresh> task is the simplest task that actually does something. Its effect is simply to perform the variable assignments specified by its <setvar> elements, then redisplay the current card with the new values. 
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="Refresh Element">
+		<p> <anchor>
+		         Refresh this page:
+		          <refresh>
+		            <setvar name="x" value="100"/>
+		          </refresh>
+		</anchor> </p>
+	</card>
+</wml>
+```
+
+No-op Task
+----------
+
+is task ka basic matlab hai 'no-operation', jab koi kaam na karwana ho lekin syntax maang raha ho ki koi task dena hai (jaisa kaam 'void' karta tha C me). Iska koi acha example nahi hai, milega to daal dunga.
+
+___________________________________________________________________________
+
+Inputs in WML
+--------------
+There are 4 ways for taking input in WML
+
+Select Tag
+----------
+
+Radio button aur checkbox banane ke liye use hota hai, select tag ke andar option tags lagte hai jo actual choices batate hai ki kya kya hai.
+
+---matter---
+
+The <select>...</select> WML elements are used to define a selection list and the <option>...</option> tags are used to define an item in a selection list. 
+Items are presented as radiobuttons in some WAP browsers. 
+
+<ul> select supports the following attributes:
+	<li> <strong> multiple: </strong> accepts 'true' or 'false', if 'true' renders checkbox </li>
+	<li> <strong> name: </strong> used to set which variable will get the selected value </li>
+	<li> <strong> value: </strong> used to give default selected value </li>
+</ul>
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="Radiobutton list">
+		<p> Choose your gender :
+		 <select name="gender" value="m">
+		  <option value="m">Male</option>
+		  <option value="f">Female</option>
+		  <option value="o">Other</option>
+		 </select>
+		</p>
+	</card>
+
+	<card title="checkbox List">
+		<p> Select Languages you know :
+		 <select name="language" multiple="true">
+		  <option value="hin">Hindi</option>
+		  <option value="eng">English</option>
+		  <option value="bho">Bhojpuri</option>
+		 </select>
+		</p>
+	</card>
+</wml>
+```
+The first card gives radiobuttons for gender selection, the selected value will be stored in the variable 'gender', if no radiobutton is selected, default value of 'm' will be stored.
+
+Second card renders 3 checkboxes for languages, you can select multiple languages, which will be stored in the variable 'language' as an array. If no checkbox is selected it will give an error, since no default value has been provided.
+
+Input Tag
+---------
+
+The <input/> element is used to create input fields and input fields are used to obtain alphanumeric data from users.
+
+<ul> input supports the following attributes:
+	<li> <strong> name: </strong> used to set which variable will get the value </li>
+	<li> <strong> value: </strong> used to give default value </li>
+	<li> <strong> maxlength: </strong> maximum input length </li>
+	<li> <strong> emptyok: </strong> accepts 'true'/'false', if 'true' input can be left blank, default value is false </li>
+	<li> <strong> typer: </strong> acceps 'text' or 'password', 'password' hides the input with stars, default value is text which is normal input </li>
+	<li> <strong> format: </strong> can be used to specify if input will accept only particular kinds of values </li>
+</ul>
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<card title="Input Fields">
+		<p> Enter Following Information:<br/> 
+		 Name: <input name="name" size="12"/>
+		 Age :  <input name="age" size="12" format="*N"/>
+		 Sex :  <input name="sex" size="12"/> 
+		</p>
+	</card>
+</wml>
+```
+above example will take user input and store in 'name', 'age' and 'sex' respectively. Age will only accept numerical values.
+
+Fieldset Tag
+------------
+
+Basically, same hai as input bas data storing ka tareeka change ho sakta hai thoda(karna chahe to), jo neeche example hai usme storing me koi farak nahi ayega
+
+---matter---
+
+The <fieldset/> element is used to group various input fields or selectable lists.
+
+<ul> fieldset supports the following attributes:
+	<li> <strong> title: </strong> used to set which variable will get the value </li>
+</ul>
+
+Example(without prolog and wml tag)
+```
+<card title="Grouped Fields">
+	<p> 
+	<fieldset title="Personal Info">
+	 Name: <input name="name" size="12"/>
+	 Age :  <input name="age" size="12" format="*N"/>
+	 Sex :  <input name="sex" size="12"/> 
+	</fieldset>
+	</p>
+</card>
+```
+
+optgroup tag
+------------
+
+ye submenu banane ke liye use hota hai, ye cheez HTML me nahi hai kyonki ye sirf chote phones pe work karegi, jaise nahi hota tha ki option select kiya uske baad radiobuttons ya checkbox khul gaye(jaisa purane phone ki settings me hota tha), vaisa banane ke liye use hota hai.
+
+---matter---
+The <optgroup>...</optgroup> element is used to group various options.
+
+Example(without prolog and wml tag)
+```
+<card title="Selectable List"> 
+	<p>
+	 <select>
+	   <optgroup title="India">
+	    <option value="delhi">Delhi</option>
+	    <option value="mumbai">Mumbai</option>
+	    <option value="hyderabad">Hyderabad</option>
+	   </optgroup>
+	   <optgroup title="USA">
+	    <option value="new york">New York</option>
+	    <option value="chicago">Chicago</option>
+	    <option value="washington">Washingtone</option>
+	   </optgroup>
+	 </select>
+	</p>
+</card>
+```
+
+___________________________________________________________________________
+
+Events in WML
+-------------
+
+'onevent' tag se event handlers define karte hai, event handler WML me bhi kaam kar sakta hai and WMLScript me bhi (neeche wale example me only WML use ho rahi hai). basically 'onevent' tag lagao and type me koi event likh do.
+
+4 events hoti hai: 
+'onenterforward': yani page par abhi abhi aye ho navigate karke tab ye event hoga, agar <go /> ke through aaye ho to bhi hoga
+'onenterbackward': yani page par back karke aye ho tab ye event hoga, agar <prev /> ke through aaye ho to bhi hoga
+'ontimer': ek particular time ke baad event hoga
+'onpick': koi particular cheez select karne pe event hoga
+
+---matter---
+
+The <onevent>...</onevent> tags are used to create event handlers.You can use either go, prev or refresh task inside <onevent>...</onevent> tags against an event. It must have the attribute 'type' which specifies one of the 4 recognised events in WML.
+
+onenterbackward: This event occurs when the user hits a card by backward navigation. That is through prev or back key.
+onenterforward: This event occurs when the user hits a card by normal forward navigation.
+onpick: This event occurs when an item of a selection list is selected or deselected.
+ontimer: This event is used to trigger an event after a given time period.
+
+All events are case-sensitive and must be written in lowercase only.
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+
+<wml>
+	<onevent type="onenterbackward">
+	  <go href="#card3"/>
+	</onevent>
+
+	<card id="card1" title="Card 1">
+		<p> <anchor>
+		     <go href="#card2"/> Go to card 2
+		</anchor> </p>
+	</card>
+
+	<card id="card2" title="Card 2">
+		<p> <anchor>
+		   <prev/> Going backwards
+		</anchor> </p>
+	</card>
+
+	<card id="card3" title="Card 3">
+		<p> Hello World! </p>
+	</card>
+</wml>
+```
+Upar wale example ko dekho, kayde se humne card2 pe prev ko call kara hai to card 1 pe jana chahiye, but kyonki prev ka event handler defined hai, to card 3 pe chala jayega.
+
+___________________________________________________________________________
+
