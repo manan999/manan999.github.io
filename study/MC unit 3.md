@@ -113,7 +113,7 @@ setvar
 
 To create a variable 'x' with value '1000' using 'setvar' we will write:
 ```
-<setvar name="x" value="1000"
+<setvar name="x" value="1000" />
 ```  
 
 To use any variable we can use ${}. For example:
@@ -190,11 +190,28 @@ The &lt;table&gt; element along with &lt;tr&gt; and &lt;td&gt; is used to create
 <!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
 
 <wml>
-	<card title="WML Images">
-		<p> This is Thumb image <img src="/images/thumb.wbmp" alt="Thumb Image"/>	</p>
-		<p> This is Heart image <img src="/images/heart.wbmp" alt="Heart Image"/> 	</p>
+	<card title="WML Tables">
+		<p><table columns="3" align="LCR">
+			<tr>
+	  		  <td>Col 1</td>
+			  <td>Col 2</td>
+			  <td>Col 3</td>
+			</tr>
+	
+			<tr>
+			  <td>A</td>
+			  <td>B</td>
+			  <td>C</td>
+			</tr>	
+
+			<tr>
+			  <td>D</td>
+			  <td>E</td>
+			  <td>F</td>
+			</tr>
+		</table></p>
 	</card>
-</wml>
+</wml
 ```
 
 __________________________________________________________________________
