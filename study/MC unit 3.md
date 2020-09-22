@@ -235,9 +235,9 @@ Isse anchor link banate hai but ye akele nahi use hota, it must be used with WML
 
 ---matter---
 
-The <anchor>...</anchor> tag pair is used to create an anchor link. It is used together with other WML elements called <go/>, <refresh/> or <prev/>. These elements are called task elements and tell WAP browsers what to do when a user selects the anchor link
+The <anchor>...</anchor> tag pair is used to create an anchor link. It is used together with other WML elements called &lt;go/&gt;, &lt;refresh/&gt; or &lt;prev/&gt;. These elements are called task elements and tell WAP browsers what to do when a user selects the anchor link
 
-You can enclose Text or image along with a task tag inside <anchor>...</anchor> tag pair.
+You can enclose Text or image along with a task tag inside &lt;anchor&gt; tag pair.
 
 ```
 <?xml version="1.0"?>
@@ -279,7 +279,7 @@ Ye vo elements hai jo browser ko batate hai ki kuch action lena hai naki kuch di
 
 ---matter---
 
-A WML task is an element that specifies an action to be performed by the browser, rather than something to be displayed. For example, the action of changing to a new card is represented by a <go> task element, and the action of returning to the previous card visited is represented by a <prev> task element. Task elements encapsulate all the information required to perform the action.
+A WML task is an element that specifies an action to be performed by the browser, rather than something to be displayed. For example, the action of changing to a new card is represented by a &lt;go&gt; task element, and the action of returning to the previous card visited is represented by a &lt;prev&gt; task element. Task elements encapsulate all the information required to perform the action.
 
 WML provides following four elements to handle four WML tasks called go task, pre task, refresh task and noop taks.
 
