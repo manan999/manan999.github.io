@@ -1,4 +1,4 @@
-Algorithm ki definition
+<Algorithm ki definition>
 
 Kisi bhi programming language me 6 tarah ki statements hoti hai 
 - input
