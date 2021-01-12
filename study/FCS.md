@@ -1,9 +1,43 @@
 Variable - Symbolic Representation of memory location
 
-3 Guidelines
+3 Guidelines for algorithm dry run
 -----------
 1. Access Times of variable doesnt depend on location
 2. While executing, we will analyse algorithm sequentially
 3. Time required for operation doesnt depend on its operands
 
 kisi bhi expression me uski most prominent term hi sirf complexity increase karegi
+
+_____________
+
+Time Complexity 
+--------------
+Time taken by an algorithm to execute(calculated using Paper Computer)
+
+5 Notations hoti hai (jin sab ka domain is the set of all natural number N)
+-whatspp group pe hai
+
+agar maine likha hai 
+
+f(n) = &Theta;(g(n))
+iska matlab f(n) & g(n) grow at the same rate 
+
+f(n) = O(g(n))
+iska matlab f(n) can never grow faster than g(n) (upper bound)
+
+f(n) = &Omega;(g(n))
+iska matlab f(n) grows at least as fast as g(n) (lower bound) 
+
+_________
+
+Characteristics of Algorithm
+----------------------------
+
+1. Generality
+2. Finiteness
+3. Non-Ambiguity
+4. Efficient
+
+___________
+
+
