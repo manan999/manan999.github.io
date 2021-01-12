@@ -15,17 +15,21 @@ Time Complexity
 Time taken by an algorithm to execute(calculated using Paper Computer)
 
 5 Notations hoti hai (jin sab ka domain is the set of all natural number N)
--whatspp group pe hai
+- &Theta; (Big Theta)
+- O (Big O)
+- &Omega; (Big Omega)
+- o (Small o)
+- &omega; (Small Omega)
 
 agar maine likha hai 
 
-f(n) = &Theta;(g(n))
+f(n) = &Theta;(g(n)) <br/>
 iska matlab f(n) & g(n) grow at the same rate 
 
-f(n) = O(g(n))
+f(n) = O(g(n)) <br/>
 iska matlab f(n) can never grow faster than g(n) (upper bound)
 
-f(n) = &Omega;(g(n))
+f(n) = &Omega;(g(n)) <br/>
 iska matlab f(n) grows at least as fast as g(n) (lower bound) 
 
 _________
