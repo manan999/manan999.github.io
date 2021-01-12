@@ -14,7 +14,8 @@ Time Complexity
 --------------
 Time taken by an algorithm to execute(calculated using Paper Computer)
 
-5 Notations hoti hai (jin sab ka domain is the set of all natural number N)
+
+iski 5 Notations hoti hai (jin sab ka domain is the set of all natural number N)
 - &Theta; (Big Theta)
 - O (Big O)
 - &Omega; (Big Omega)
@@ -23,7 +24,7 @@ Time taken by an algorithm to execute(calculated using Paper Computer)
 
 agar maine likha hai 
 
-f(n) = &Theta;(g(n)) <br/>
+f(n) = &theta;(g(n)) <br/>
 iska matlab f(n) & g(n) grow at the same rate 
 
 f(n) = O(g(n)) <br/>
@@ -31,6 +32,8 @@ iska matlab f(n) can never grow faster than g(n) (upper bound)
 
 f(n) = &Omega;(g(n)) <br/>
 iska matlab f(n) grows at least as fast as g(n) (lower bound) 
+
+Small and Big me itna farak hota hai bas ki small ke relation strictly greater ya less hote hai. <br />
 
 _________
 
