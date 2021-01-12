@@ -16,7 +16,7 @@ Time taken by an algorithm to execute(calculated using Paper Computer)
 
 
 iski 5 Notations hoti hai (jin sab ka domain is the set of all natural number N)
-- &Theta; (Big Theta)
+- &theta; (Theta)
 - O (Big O)
 - &Omega; (Big Omega)
 - o (Small o)
