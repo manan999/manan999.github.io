@@ -66,3 +66,14 @@ _______
 
 - according to sir, saare DS array ke through hi implement hote hai backend par, including 2-D Array
 - 2 tarah ke DS hote hai : Internal(jo RAM pe kaam karte hai) & External(HDD me stored) (jaise B-Tree, jo Oracle DB me use hota hai vo external hai and AVL&BSt internal hai)
+
+
+_________
+
+Topics to be studied
+--------------------
+
+1. Malloc
+2. Dry run karna hai notes ka
+3. Sparse Polynomial (Storage, addition, multiplication)
+4. Sparse Matrix (Storage, addition, multiplication)
