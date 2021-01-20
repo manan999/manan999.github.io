@@ -77,3 +77,4 @@ Topics to be studied
 2. Dry run karna hai notes ka
 3. Sparse Polynomial (Storage, addition, multiplication)
 4. Sparse Matrix (Storage, addition, multiplication)
+5. 4 tarah ki linked list hoti hai ( LL, DLL, CLL, CDLL) 
