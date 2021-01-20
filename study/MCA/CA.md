@@ -13,3 +13,8 @@ Topics to Study
 (Mile hue Notes par PDF hai)
 
 ________________
+
+1. Register Transfer and Micro-Operations
+2. Register Transfer Language (RTL) 
+
+_______________
