@@ -48,3 +48,10 @@ Characteristics of Algorithm
 ___________
 
 
+AKS algorithm (Aggarwal, Katyal, Saxena) Algorithm for prime number
+------------------------------------------------------------------
+
+_______________
+
+1. Totient of a number ( &phi;(n) )
+2. Fermat&apos;s little theorum
