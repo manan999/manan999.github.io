@@ -55,3 +55,4 @@ _______________
 
 1. Totient of a number ( &phi;(n) )
 2. Fermat&apos;s little theorum
+3. Euler&apos;s theorum
