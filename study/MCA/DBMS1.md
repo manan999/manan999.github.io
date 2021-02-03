@@ -89,7 +89,7 @@ Types of DBMS / DBMS Models
 
 _____________________
 
-DBMS Architecture
+DBMS Architecture 
 -----------------
 
 
