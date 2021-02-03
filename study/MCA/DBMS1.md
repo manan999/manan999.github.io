@@ -4,7 +4,7 @@ _____________________
 What is a Database?
 -------------------
 
-//Explanation
+//Explanation <br/>
 Database ek collection hai aise data ka jo aapas me related ho
 - Kisi real-world enterprise ya organisation ke data ko represent karta hai (jaise library ke books ka data, ya bank ke account ka data)
 - Us enterprise ke kisi specific purpose ke liye hi banaya jata hai (jaise managing ya fir accounting)
@@ -20,7 +20,7 @@ _____________________
 What is DBMS (Database Management Systems)?
 ---------------------------------------
 
-//Explanation
+//Explanation <br/>
 vo ek set of programs(yani software) hai jisse kisi bhi organisation ke data ko manage karna na sirf asan ho jaye balki use retrieve karna, manipulate karna aur usse koi meaningful jaankaari nikalna bhi easy ho jaye. Jis kaam ke liye database banaya gaya hai ( for example, taaki accounting bina error ke ho sake) us kaam ko DBMS bahut easy kar deta hai tools provide karke (jaise error checking, Locks)
 
 DBMS are a set of programs(software) that allow an organisation to not only manage their data efficiently but also makes it easy to retrieve, manipulate and gain information from that data. DBMS makes it easy for a database to achieve its desired purpose with the help of various tools. (For example, DBMS may provide tools like Error Checking Techniques, Write Locks etc, to efficiently perform accounting in a Bank Database)
