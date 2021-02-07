@@ -124,5 +124,43 @@ To 3 layer hui:
 
 _____________________
 
+Database Schema
+---------------
 
+- A database schema is the structure of the database that describes:
+	- different entities in the database
+	- their relationships among each other
+	- constraints on the data
+	- how data is organised. 
+- It contains a detail description of the database and it can be also be represented visually using ER diagrams or Flow charts. 
+- It is designed by the database designers to help programmers understand the database and make it useful. This is very important for designing the Application Layer of a database becuase without the application programmers may not know internal details about the data and schema can help them understand the database.
+- It may be designed before the database, when no data exists. 
 
+// Explanation
+- Schema is basically database ka dhancha jo batata hai ki data
+	- kaise organise ho raha hai(kya kya tables hai)
+	- kaise store ho raha hai(attributes kya kya hai)
+	- relationships kya hai unke beech( common attributes ya foreign keys)
+	- constraints kya hai data par(jaise hum checks lagate hai ki unique, required)
+- Schema ko visually bhi dikhana asan hai actual database ko nahi dikha sakte visually
+- Schema ke through hi database dusro ko samjhaya ja sakta hai, jaise jo application programmer hai, vo bina schema ke application server design nahi kar payega. Soch kar dekho agar backend server banate wakt tumhare paas models wala folder na ho to kitni dikkat rahegi.
+- Mainly Programmers and designer ki understanding ke liye zaruri hai, end-user ko koi matlab nahi hai
+- Ye bina data ke bhi banaya ja sakta hai, database se pehle
+
+___________
+
+Database Instance
+-----------------
+
+- This is very different from database Schema becuase schema is created when data doesnt exist. Database Instance is the operational database at any particular point in time. It contains the actual data. It can be called snapshot of the database
+- DBMS has to ensure that each database instance is a valid instance, according to the schema and follows all the rules and constraints on the database which have been imposed by database designers.
+- This can never exist in single-tier architecture thus multi-tier architectures for databases are very important to maintain consistent data with no errors.
+
+// Explanation
+- Database Schema se opposite samajh lo, schema jaise theoretical hai ki data aise store hona chahiye, instance(hindi me udaharan) yani ki kisi particular point par database ki values. Aisa keh lo ki database ka snapshot le liya.
+- example ke liye humara psyment ka database hai isko main database instance bol sakta hu, suppose pure database me ek single value change ho jati hai, to dusra instance ho gaya vo, suppose kuch add/less hua to vo ek aur instance ho gaya..samajh rahe ho
+- DBMS ko ensure karna hota hai ki har ek instance according to rules and constraints hi ho(jaisa hum har ek value updation, deletion, creation se pehle check karate hai ki sahi ho rahi hai na)
+- single-tier me ye cheez nahi ho sakti isiliye uska ek aur drawback hai ye, and ye keh lo ki aur reason hai ki 2ya 3 tier architecture kyu hona chahiye
+
+____________
+   
