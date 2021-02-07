@@ -8,7 +8,8 @@ What is a Database?
 Database ek collection hai aise data ka jo aapas me related ho
 - Kisi real-world enterprise ya organisation ke data ko represent karta hai (jaise library ke books ka data, ya bank ke account ka data)
 - Us enterprise ke kisi specific purpose ke liye hi banaya jata hai (jaise managing ya fir accounting)
-- Database se enterprise ke kaam me madad milti hai aur enterprise database ko baar baar update karta hai ( jaise bina account database ke bank ka kaam nahi ho sakta)*/
+- Database se enterprise ke kaam me madad milti hai aur enterprise database ko baar baar update karta hai ( jaise bina account database ke bank ka kaam nahi ho sakta)
+
 
 Database is a collection of inter-related data
 - It represents the data of a real-life organisation or enterprise. (e.g - Bank Account Database, Library Book Management System)
@@ -91,6 +92,26 @@ _____________________
 
 DBMS Architecture 
 -----------------
+
+<b>1-Tier Architecture</b>: <br/> 
+- This is simplest database architecture where a user directly uses the database terminal and performs tasks on it. 
+- Any changes made are reflected directly into the database. 
+- This is not suitable for users with no techincal knowledge becuase there are no useful tools like GUI, charts and visualisations. 
+- A Programmer or Database Designer may prefer to work with this architecture becuase it is faster and they have the technical knowledge required. However, it is still uncommon becuase it is easy to make errors that are permanent.
+
+<b>2-Tier Architecture</b>: <br/>
+- When the database has an application like a Front-End through which database can be accessed it is known as 2-Tier Architecture.
+- The application through which the database is accessed is entirely independent of database in terms of operations, design and programming. 
+- It is suitable for application programmers or people with little techincal knowledge becuase it is easy to use and provides some features specifically to make it easy for End-User to work on database.
+
+<b>3-Tier Architecture</b>: <br/>
+- This architecture adds another layer between the database and the user. The 3 layers are: 
+	- Database Layer
+	- Application Layer
+	- User Layer / Presentation Layer 
+
+
+_____________________
 
 
 
