@@ -35,7 +35,6 @@ Types of Attributes
 	- This attribute is NOT STORED in the physical database.
 	- These attributes have values which can be calculated easily from other attributes stored in database.
 	- Examples include: Age can be derived from DOB, Average Marks can be derived by applying calculations.
-<br/>
 - <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example: Roll No. of a Student
 - <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example: Phone no. or Email of a person
 
@@ -70,6 +69,8 @@ Relationships
 	- 1:m (One-to-Many): Each tuple can be related to many tuples in other set
 	- m:1 (Many-to-One): Many tuples can be related to single tuple in other set
 	- m:n (Many-to-Many): any tuples can be related to any number of tuples in other set
+
+//Diagrams daalne hai iska 
 
 ________________________
 
