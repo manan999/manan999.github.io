@@ -29,15 +29,15 @@ Attributes
 Types of Attributes
 ------------------
 
-- <b>Simple Attribute</b>: The attribute which contains atomic values that cannot be divided further. <br/>For Example- Mobile or Gender of a student.
-- <b>Composite Attribute</b>: The attributes which contains 2 or more Simple Attributes. <br/>For Example- Name of a person may contain First_Name and Last_Name
+- <b>Simple Attribute</b>: The attribute which contains atomic values that cannot be divided further. <br/>For Example: Mobile or Gender of a student.
+- <b>Composite Attribute</b>: The attributes which contains 2 or more Simple Attributes. <br/>For Example: Name of a person may contain First_Name and Last_Name
 - <b>Derived Attribute</b>:
 	- This attribute is NOT STORED in the physical database.
 	- These attributes have values which can be calculated easily from other attributes stored in database.
 	- Examples include: Age can be derived from DOB, Average Marks can be derived by applying calculations.
 <br/>
-- <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example- Roll No. of a Student
-- <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example- Phone no. or Email of a person
+- <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example: Roll No. of a Student
+- <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example: Phone no. or Email of a person
 
 <br/>
 _Note: Each Attribute may fall in more than one category, jaise Derived single-value attribute, Simple Multi-value attribute, etc._
