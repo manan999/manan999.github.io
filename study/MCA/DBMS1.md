@@ -163,4 +163,30 @@ Database Instance
 - single-tier me ye cheez nahi ho sakti isiliye uska ek aur drawback hai ye, and ye keh lo ki aur reason hai ki 2ya 3 tier architecture kyu hona chahiye
 
 ____________
-   
+
+Metadata
+--------
+
+- It is "Data about Data", or Information regarding how data is stored and organised
+- It summarizes information about data which makes it easier to search, analyse and performs other tasks with data.
+- A more accurate metadata will lead to easier operations on the data
+
+Data Independence in DBMS
+-------------------------
+
+- It refers to the ability of changing data at one layer (in 3-tier architecture) and other layers do not get disturbed. 
+- Database doesnt only store the actual user data, it also stores Metadata. If we change the Metadata, it shouldnt affect Data stored in any way. Also, if More data is added or some of data is removed, Metadata should remain same.
+
+<b>Logical Data Independence</b><br/>
+- Logical data refers to the metdata, which tells us how data is being managed. 
+- This includes what a table is, what constraints it has, its relationships, etc.
+- Logical Data Independence is achieved when metadata separates itself from the actual data stored in database, this means that if suppose the column name in a table is changed, it should not affect the data stored in the table.
+
+<b>Physical Data Independence</b><br/>
+- Physical data is actual data stored on the disk. 
+- Physical data Independence is achieved when we can modify the data in anyway and its schema, constraints, etc(Metadata) remains unchanged.
+- This also includes major changes like for example, I change the location of Database, it still should not affect the Schema of the database
+
+___________________
+
+ 
