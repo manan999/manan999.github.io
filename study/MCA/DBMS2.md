@@ -39,6 +39,7 @@ Types of Attributes
 - <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example- Roll No. of a Student
 - <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example- Phone no. or Email of a person
 
+<br/>
 _Note: Each Attribute may fall in more than one category, jaise Derived single-value attribute, Simple Multi-value attribute, etc._
 
 //Explanation required hogi to likh dunga
