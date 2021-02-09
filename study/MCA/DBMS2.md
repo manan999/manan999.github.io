@@ -36,7 +36,7 @@ Types of Attributes
 	- These attributes have values which can be calculated easily from other attributes stored in database.
 	- Examples include: Age can be derived from DOB, Average Marks can be derived by applying calculations.
 <br/>
-- <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value. F<br/>or Example- Roll No. of a Student
+- <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example- Roll No. of a Student
 - <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example- Phone no. or Email of a person
 
 _Note: Each Attribute may fall in more than one category, jaise Derived single-value attribute, Simple Multi-value attribute, etc._
