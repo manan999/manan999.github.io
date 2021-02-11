@@ -89,6 +89,12 @@ ER Diagram Representations
 - Multi-valued Attributes are denoted using Double Ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_multivalued.png">[Diagram]</a> 
 - Derived Attributes are represented using dotted or dashed ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_derived.png">[Diagram]</a>
 
+<b><ins>Participation in a Relationship</ins></b>
+
+- Primary Key attribute is denoted using an Underline. [Diagram]
+- Foreign Key attribute is represnted like any normal attribute.
+- Weak Entity forms a composite key with a Strong Entity. Since it has no primary key itself, it will distinguish itself using primary key of a strong entity. It is of the form {primary_key_strong, any_attribute_weak}. It is denoted by a dashed underline.  <a href="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Weak-Entity-Set-Example.png">[Diagram]</a>
+
 <b><ins>Relationship</ins></b>
 
 //Definition in sab ki upar given hai, yaha kewal diagrams dikha raha hu
@@ -100,7 +106,9 @@ ER Diagram Representations
 
 <b><ins>Participation in a Relationship</ins></b>
 
-- Total Participation: When each entity is fully involved in a relationship. It is denoted by Double-Lines. 
+- Total Participation: 
+	- When each entity is fully involved in a relationship. It is denoted by Double-Lines.
+	- Weak Entity must have a 1:n Relationship with Total participation to the Strong Entity which is being used to identify the weak entity. 
 - Partial Participation: When an entity is part of relationship but not fully dependant on it. 
 - <a href="https://www.tutorialspoint.com/dbms/images/er_relation_participation.png">[Diagram]</a>
 
@@ -109,3 +117,10 @@ ____________________
 ER Diagram Concepts
 -------------------
 
+<ins><b>Generalization</b></ins>: When 2 or more entities share similar attributes, they can brought under a single big entity, this is known as generalisation. This can be called a Bottom-Up approach, where different subclasses are joined to form a superclass. <br/><a href="https://www.tutorialspoint.com/dbms/images/generalization.png">[Diagram]</a>
+
+//You can take diagram as example and explain
+
+<ins><b>Specialization</b></ins>: It is the opposite of Generalisation, when an entity is divided into various other entities so that each divided entity can be given special attributes it is called Specialisation. It can be called a top-down approach and entities are said to be in "IS A" relationship. For Example, Person IS A Teacher, Person IS A Student. <br/><a href="https://www.tutorialspoint.com/dbms/images/specialization.png">[Diagram]</a>   
+
+<ins><b>Specialization</b></ins>: ?
