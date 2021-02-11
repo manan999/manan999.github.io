@@ -91,7 +91,7 @@ ER Diagram Representations
 
 <b><ins>Participation in a Relationship</ins></b>
 
-- Primary Key attribute is denoted using an Underline. [Diagram]
+- Primary Key attribute is denoted using an Underline. <a href="https://raw.githubusercontent.com/manan999/manan999.github.io/master/study/images/Primary%20Key.svg">[Diagram]</a>
 - Foreign Key attribute is represnted like any normal attribute.
 - Weak Entity forms a composite key with a Strong Entity. Since it has no primary key itself, it will distinguish itself using primary key of a strong entity. It is of the form {primary_key_strong, any_attribute_weak}. It is denoted by a dashed underline.  <a href="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Weak-Entity-Set-Example.png">[Diagram]</a>
 
