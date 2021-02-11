@@ -38,7 +38,7 @@ Types of Attributes
 - <b>Single-Value Attribute</b>: Attributes that MUST contain a Single Value.<br/>For Example: Roll No. of a Student
 - <b>Multi-Valued Attributes</b>: Attributes that MAY contain more than one value. <br/>For example: Phone no. or Email of a person
 
-<br/>
+
 _Note: Each Attribute may fall in more than one category, jaise Derived single-value attribute, Simple Multi-value attribute, etc._
 
 //Explanation required hogi to likh dunga
@@ -76,4 +76,36 @@ ________________________
 
 ER Diagram Representations
 --------------------------
+
+<b><ins>Entity</ins></b>
+
+- Entitites are represented using rectangles. <a href="https://www.tutorialspoint.com/dbms/images/entities.png">[Diagram]</a> Each entity must have a primary key. 
+- Entites that do not have a primary key are called <b>Weak Entity</b>, they are denoted by Double Rectangle. <a href="https://thealienadventures.files.wordpress.com/2013/02/weak-entity.jpg">[Diagram]</a> 
+
+<b><ins>Attributes</ins></b>
+
+- Attributes are the properties of entities. They are represented using an "Ellipse". <a href="https://www.tutorialspoint.com/dbms/images/er_attributes.png">[Diagram]</a>
+- Composite Attributes are denoted using a tree-like structure. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_composite.png">[Diagram]</a>
+- Multi-valued Attributes are denoted using Double Ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_multivalued.png">[Diagram]</a> 
+- Derived Attributes are represented using dotted or dashed ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_derived.png">[Diagram]</a>
+
+<b><ins>Relationship</ins></b>
+
+//Definition in sab ki upar given hai, yaha kewal diagrams dikha raha hu
+
+- One-to One: <a href="https://www.tutorialspoint.com/dbms/images/er_relation_one_to_one.png">[Diagram]</a>
+- One-to Many: <a href="https://www.tutorialspoint.com/dbms/images/er_relation_one_to_many.png">[Diagram]</a>
+- Many-to One: <a href="https://www.tutorialspoint.com/dbms/images/er_relation_many_to_one.png">[Diagram]</a>
+- Many-to Many: <a href="https://www.tutorialspoint.com/dbms/images/er_relation_many_to_many.png">[Diagram]</a>
+
+<b><ins>Participation in a Relationship</ins></b>
+
+- Total Participation: When each entity is fully involved in a relationship. It is denoted by Double-Lines. 
+- Partial Participation: When an entity is part of relationship but not fully dependant on it. 
+- <a href="https://www.tutorialspoint.com/dbms/images/er_relation_participation.png">[Diagram]</a>
+
+____________________
+
+ER Diagram Concepts
+-------------------
 
