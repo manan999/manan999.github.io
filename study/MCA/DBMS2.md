@@ -123,4 +123,4 @@ ER Diagram Concepts
 
 <ins><b>Specialization</b></ins>: It is the opposite of Generalisation, when an entity is divided into various other entities so that each divided entity can be given special attributes it is called Specialisation. It can be called a top-down approach and entities are said to be in "IS A" relationship. For Example, Person IS A Teacher, Person IS A Student. <br/><a href="https://www.tutorialspoint.com/dbms/images/specialization.png">[Diagram]</a>   
 
-<ins><b>Specialization</b></ins>: ?
+<ins><b>Aggregation</b></ins>: ?
