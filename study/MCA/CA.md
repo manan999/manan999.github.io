@@ -1,3 +1,22 @@
+# CA (Unit 1)
+_____________________
+
+Binary Codes
+-------------
+
+<a href="https://www.tutorialspoint.com/computer_logical_organization/binary_codes.htm#:~:text=In%20the%20coding%2C%20when%20numbers,also%20called%20as%20binary%20code."> [Link] </a>
+
+Number System Conversions
+-------------------------
+
+<a href="https://www.tutorialspoint.com/basics_of_computers/basics_of_computers_number_system_conversion.htm">[Link]</a>
+
+
+
+______________________
+
+
+//todo jaisa hai
 Topics to Study
 ---------------
 
