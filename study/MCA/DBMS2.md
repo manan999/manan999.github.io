@@ -89,7 +89,7 @@ ER Diagram Representations
 - Multi-valued Attributes are denoted using Double Ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_multivalued.png">[Diagram]</a> 
 - Derived Attributes are represented using dotted or dashed ellipse. <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_derived.png">[Diagram]</a>
 
-<b><ins>Participation in a Relationship</ins></b>
+<b><ins>Keys</ins></b>
 
 - Primary Key attribute is denoted using an Underline. <a href="https://raw.githubusercontent.com/manan999/manan999.github.io/master/study/images/Primary%20Key.svg">[Diagram]</a>
 - Foreign Key attribute is represnted like any normal attribute.
