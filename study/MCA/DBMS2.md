@@ -140,7 +140,7 @@ Steps:
 	- Underlined attribute will become Primary Key of the table
 <br/><br/>// Normally Entity ki table bana do...and normally uske attributes lag jayenge
 <br/>Agar ER ye hai <a href="https://www.tutorialspoint.com/dbms/images/mapping_entities.png">[Diagram]</a>. Equivalent table will be : <br/>
-Student(<u>Roll No.</u>, Name, Class, Subject)
+Student(<ins>Roll No.</ins>, Name, Class, Subject)
 
 2. (Only if Multi-valued Attribute exists. e.g- Contact Number)
 	- Create separate Table for Multi-valued attribute
@@ -148,9 +148,9 @@ Student(<u>Roll No.</u>, Name, Class, Subject)
 	- Primary key of this table will be composite key, created from both the attributes
 <br/><br/>// Example se clear ho jayega 
 <br/> Agar ER ye hai <a href="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Multi-Valued-Attributes-Example.png">[Diagram]</a>. To, 3 tables banengi : <br/>
-	- Student(<u>Roll No.</u>, Name, Age)
-	- StudentMobile(<u>Roll No., Mob_no</u>)
-	- StudentEmail(<u>Roll No., Email_id</u>)
+	- Student(<ins>Roll No.</ins>, Name, Age)
+	- StudentMobile(<ins>Roll No., Mob_no</ins>)
+	- StudentEmail(<ins>Roll No., Email_id</ins>)
 // suppose ab agar 1 se zyada mobile hote hai student ke to mobile table me 2 rows create kar sakte hai
 
 3. (Only if there is a Composite Attribute)
@@ -158,14 +158,14 @@ Student(<u>Roll No.</u>, Name, Class, Subject)
 	- Add each component as separate attribute in the original table
 <br/><br/>// isme sirf attributes zyada add ho jayenge, example dekho
 <br/> Agar ER ye hai <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_composite.png">[Diagram]</a>. To table banegi: <br/>
-Student(<u>Roll No.</u>, birthdate, firstName, lastName)
+Student(<ins>Roll No.</ins>, birthdate, firstName, lastName)
 // original name attribute dala hi nahi alag se
 
 4. (Derived Atrribute), it is ignored while mapping becuase it doesnt exist in physical table
 
 <br/>//Yaha tak ka example. Consider this ER <a href="https://lh3.googleusercontent.com/proxy/Q2L36DIUroIPGC45_IbteIOsQo5je0fEIm2uLd20caPHgyxSchkGwGTLMku32Eh4TZCsVWdyHmph9KFKYCsBxKZHRfGeeuy1TDwRlPWgM_W1HFQIHbzI2w">[Diagram]</a> 2 tables banengi: <br/>
-	- Person( <u>SSN</u>, address, birthdate, first, last)
-	- PersonHobby(<u>SSN, Hobby</u>)
+	- Person( <ins>SSN</ins>, address, birthdate, first, last)
+	- PersonHobby(<ins>SSN, Hobby</ins>)
 
 5. For Relationship(Rhombus) 
 	- Create Table for each Relationship
