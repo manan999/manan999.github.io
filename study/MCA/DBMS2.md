@@ -181,3 +181,29 @@ Steps:
 - Course(<ins>Course Code</ins>, CourseName, duration, Roll No, Date_of_enrol)
  
 6. <b>For M:N relationship</b>
+	- Create separate table for relationship
+	- Add Primary key of all participating entities as foreign key.
+	- Add all relationship attribtutes
+	- Primary key will be composite key created from all foreign keys
+
+// Example se clear ho jayega 
+<br/> Agar ER <a href="https://res.cloudinary.com/practicaldev/image/fetch/s--GGZdD9Lx--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/9e2hipmk4by36xcqfomh.png">[Diagram]</a> 3 tables banengi: <br/>
+- Student(<ins>Roll No</ins>, name, class)
+- Course(<ins>Course Code</ins>, CourseName, duration)
+- Enroll(<ins>Roll No, Course Code</ins>, Date_of_enrol)
+
+7. <b>For 1:1 relationship</b>
+	- <b>Agar relationship ka koi attribute hai</b>, Same procedure as M:N
+	- <b>Agar Relationship attribute nahi hai</b>, Same procedure as 1:M (bas kisi bhi ek table me foreign key le sakte hai)
+
+8. <b>For Weak Entity(Double Rectangle)</b>
+	- Same starting procedure as normal entity
+	- Add Primary key of strong entity as Foreign Key
+	- Primary Key of this table is composite key created from primary key of strong entity
+
+// Example se clear ho jayega 
+<br/> Agar ER <a href="https://www.tutorialspoint.com/dbms/images/mapping_weak_entity_sets.png">[Diagram]</a> 2 tables banengi: <br/>
+- Student(<ins>Roll No</ins>, name)
+- Dependant(<ins>Name, Roll No</ins>)
+
+_____________________
