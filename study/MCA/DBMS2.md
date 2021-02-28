@@ -124,3 +124,30 @@ ER Diagram Concepts
 <ins><b>Specialization</b></ins>: It is the opposite of Generalisation, when an entity is divided into various other entities so that each divided entity can be given special attributes it is called Specialisation. It can be called a top-down approach and entities are said to be in "IS A" relationship. For Example, Person IS A Teacher, Person IS A Student. <br/><a href="https://www.tutorialspoint.com/dbms/images/specialization.png">[Diagram]</a>   
 
 <ins><b>Aggregation</b></ins>: ?
+
+
+_____________________
+
+ER to Relational Mapping
+--------------------------
+
+<b>Yaani ki ER Diagram Given ho usse tables kaise banaye</b>
+
+Steps:
+1. For entity(Rectangle) 
+	- Create Table for each Entity
+	- Their attributes will become columns for the table 
+	- Underlined attribute will become Primary Key of the table
+<br/>// Normally Entity ki table bana do...and normally uske attributes lag jayenge
+<br/>Agar ER ye hai <a href="https://www.tutorialspoint.com/dbms/images/mapping_entities.png">[Diagram]</a>. Equivalent table will be : <br/>
+Student(<u>Roll No.</u>, Name, Class, Subject)
+
+
+2. (Only if Multi-valued Attribute exists. e.g- Contact Number)
+	- Create separate Table for Multi-valued attribute
+	- Primary Key of original table will be foriegn key, other attributes in this table are multiple values for 
+3. For Relationship(Rhombus) 
+	- Create Table for each Relationship
+	- Primary keys of all involved entitites will be attributes in this table. Each key will retain its original data type. 
+	- Primary Key of this table is a composite key created from primary keys of all participating entities. 
+4. 
