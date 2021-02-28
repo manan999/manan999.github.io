@@ -138,16 +138,23 @@ Steps:
 	- Create Table for each Entity
 	- Their attributes will become columns for the table 
 	- Underlined attribute will become Primary Key of the table
-<br/>// Normally Entity ki table bana do...and normally uske attributes lag jayenge
+<br/><br/>// Normally Entity ki table bana do...and normally uske attributes lag jayenge
 <br/>Agar ER ye hai <a href="https://www.tutorialspoint.com/dbms/images/mapping_entities.png">[Diagram]</a>. Equivalent table will be : <br/>
 Student(<u>Roll No.</u>, Name, Class, Subject)
 
-
 2. (Only if Multi-valued Attribute exists. e.g- Contact Number)
 	- Create separate Table for Multi-valued attribute
-	- Primary Key of original table will be foriegn key, other attributes in this table are multiple values for 
+	- Primary Key of original table will be foriegn key, other attribute in this table will be the multi-valued attribute
+	- Primary key of this table will be composite key, created from both the attributes
+<br/><br/>// Example se clear ho jayega 
+<br/> Agar ER ye hai <a href="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Multi-Valued-Attributes-Example.png">[Diagram]</a>. To, 3 tables banengi : <br/>
+	- Student(<u>Roll No.</u>, Name, Age)
+	- StudentMobile(<u>Roll No., Mob_no</u>)
+	- StudentEmail(<u>Roll No., Email_id</u>)
+suppose ab agar 1 se zyada mobile hote hai student ke to mobile table me 2 rows create kar sakte hai
+
 3. For Relationship(Rhombus) 
 	- Create Table for each Relationship
 	- Primary keys of all involved entitites will be attributes in this table. Each key will retain its original data type. 
-	- Primary Key of this table is a composite key created from primary keys of all participating entities. 
+	- Primary Key of this table is a composite key, created from primary keys of all participating entities. 
 4. 
