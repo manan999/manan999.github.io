@@ -151,9 +151,23 @@ Student(<u>Roll No.</u>, Name, Class, Subject)
 	- Student(<u>Roll No.</u>, Name, Age)
 	- StudentMobile(<u>Roll No., Mob_no</u>)
 	- StudentEmail(<u>Roll No., Email_id</u>)
-suppose ab agar 1 se zyada mobile hote hai student ke to mobile table me 2 rows create kar sakte hai
+// suppose ab agar 1 se zyada mobile hote hai student ke to mobile table me 2 rows create kar sakte hai
 
-3. For Relationship(Rhombus) 
+3. (Only if there is a Composite Attribute)
+	- Split Composite Attribute into its components
+	- Add each component as separate attribute in the original table
+<br/><br/>// isme sirf attributes zyada add ho jayenge, example dekho
+<br/> Agar ER ye hai <a href="https://www.tutorialspoint.com/dbms/images/er_attributes_composite.png">[Diagram]</a>. To table banegi: <br/>
+Student(<u>Roll No.</u>, birthdate, firstName, lastName)
+// original name attribute dala hi nahi alag se
+
+4. (Derived Atrribute), it is ignored while mapping becuase it doesnt exist in physical table
+
+<br/>//Yaha tak ka example. Consider this ER <a href="https://lh3.googleusercontent.com/proxy/Q2L36DIUroIPGC45_IbteIOsQo5je0fEIm2uLd20caPHgyxSchkGwGTLMku32Eh4TZCsVWdyHmph9KFKYCsBxKZHRfGeeuy1TDwRlPWgM_W1HFQIHbzI2w">[Diagram]</a> 2 tables banengi: <br/>
+	- Person( <u>SSN</u>, address, birthdate, first, last)
+	- PersonHobby(<u>SSN, Hobby</u>)
+
+5. For Relationship(Rhombus) 
 	- Create Table for each Relationship
 	- Primary keys of all involved entitites will be attributes in this table. Each key will retain its original data type. 
 	- Primary Key of this table is a composite key, created from primary keys of all participating entities. 
