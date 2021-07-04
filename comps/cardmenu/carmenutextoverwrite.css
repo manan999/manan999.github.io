@@ -1,0 +1,62 @@
+.cardmenu .text-div {  
+	margin: .5em 0;    
+  display: flex ;
+  align-items: center;
+}
+
+.cardmenu .lbel {
+  font-size: 1.2rem ;
+  font-family: var(--font) ;
+  width: 7em ;
+}
+
+.cardmenu .non-edit .lbel {
+  width: 3em ;
+  margin-right: .4em ;
+  display: flex ;
+  justify-content: flex-end;
+}
+
+.cardmenu .inpu {
+  width: 28vw ;
+  margin-top: 0 ;
+  box-shadow: none;
+  font-family: var(--font) ;
+  font-size: 1.1rem ;
+  background-color: transparent;
+  outline: none;
+  color: var(--laal) ;
+  padding: 0.4em 0.4em 0.2em ; 
+  border: none ;
+  border-top-left-radius: 0.5rem ;
+  border-top-right-radius: 0.5rem ;
+  border-bottom: 2px solid var(--halkaRed) ;
+}
+
+.cardmenu .non-edit .inpu {
+  width: 15vw ;
+  font-weight: bold ;
+  border-bottom: none ;
+  cursor: default;
+}
+
+.cardmenu .inpu:focus
+{   outline : none ;
+    border: none ;
+    border-bottom: 2px solid var(--dusraRed) ;
+}
+
+.cardmenu .non-edit .inpu:focus {
+  border-bottom: none ;
+}
+
+.cardmenu .non-edit .inpu:hover {
+  border-bottom: none ;
+}
+
+.cardmenu .inpu:hover
+{  
+   color: var(--laal) ;
+   border-bottom: 2px solid var(--laal) ;
+   box-shadow: none;
+}
