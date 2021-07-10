@@ -1,0 +1,48 @@
+.pop-con {
+	height: 100% ;
+	width: 100% ;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex ;
+	align-items: center;
+	justify-content: center; 
+}
+
+.popup {
+	background-color: white ;
+	z-index: 10 ;
+	height: auto;
+	width: auto ;
+	margin-top: auto ;
+	margin-bottom: auto ;
+	display: inline-block; 
+	border-radius: 1rem ;
+	text-align: right;
+}
+
+.popup-close
+{	
+	font-size: 1.8rem ;
+	color: darkred ;
+	z-index: 15;
+	margin: .5em 1em 0 ;
+	padding: 0 .35em ;
+	border-radius: 50% ;
+	display: inline-block ;
+	font-weight: normal ;
+	cursor: pointer;
+	transition: all .1s ;
+}
+
+.popup-close:hover
+{	background-color: salmon ;		}
+
+@media(max-width: 600px)
+{	.popup-close
+	{	margin-left:80% ;
+	}
+}
